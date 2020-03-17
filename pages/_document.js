@@ -5,8 +5,7 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
-                    <title>Besedila pesmi akordi</title>
-                    <link rel="stylesheet" href="/_next/static/style.css"/>
+                    <link rel="stylesheet" href="/_next/static/style.css" />
                 </Head>
                 <body>
                     <Main />

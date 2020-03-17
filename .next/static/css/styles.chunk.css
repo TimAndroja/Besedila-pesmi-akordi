@@ -1,3 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+.nav {
+  padding: 6px 5% 0px 5%;
+  display: grid;
+  grid-template-columns: 4fr 3fr 4fr;
+  grid-column-gap: 0px;
+  height: 70px;
+  background-color: #00000033;
+  width: 100%;
+  font-size: 30px;
+  box-shadow: 1px 1px transparent;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14); }
+  .nav h1 {
+    font-size: 25px;
+    line-height: 0.9; }
+  .nav h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.9; }
+  .nav .besedilapesmi {
+    margin-top: 5px; }
+  .nav .akordichords {
+    display: flex; }
+  .nav .chords {
+    margin-top: 4px;
+    margin-left: 2px; }
+
+.logo {
+  background-image: url("/static/notes.png");
+  background-repeat: no-repeat;
+  background-position-x: 168px;
+  background-position-y: 29px;
+  background-size: 90px; }
+
+.searchbar {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  margin-top: 5px;
+  line-height: 1; }
+  .searchbar input {
+    width: 100%;
+    /* force to expand to container's width */
+    border: none;
+    border: 3px solid rgba(44, 42, 42, 0.877);
+    border-radius: 3px;
+    padding: 4px 0 4px 0;
+    color: rgba(44, 42, 42, 0.877);
+    font-size: 28px; }
+  .searchbar input::placeholder {
+    color: gray;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    margin-right: 4px; }
+  .searchbar input:focus {
+    outline: none;
+    border: 3px solid rgba(128, 128, 128, 0.6); }
+  .searchbar .searchicon {
+    margin-top: 6px;
+    margin-left: 8px; }
+    .searchbar .searchicon img {
+      height: 32px; }
+    .searchbar .searchicon img:hover {
+      opacity: 0.6; }
+
+.right_menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2; }
+  .right_menu a {
+    text-decoration: none;
+    color: black; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
