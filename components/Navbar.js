@@ -23,9 +23,7 @@ class Navbar extends React.Component {
               <input type="text" placeholder="Brskaj skladbe, avtorje" />
             </div>
             <div className="searchicon">
-              <a href="">
-                <img src="../static/search_icon.png" alt="Išči" />{" "}
-              </a>
+              <img src="../static/search_icon.png" alt="Išči" />{" "}
             </div>
           </div>
 

@@ -1,0 +1,23 @@
+@import "scss/style.scss";
+
+.kategorije {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+
+  .kategorija {
+    text-align: center;
+    h2 {
+      font-size: 19px;
+    }
+    h2:hover {
+      color: map-get($colors, kategorija);
+      cursor: pointer;
+    }
+
+    background-color: rgba(0, 0, 0, 0.02);
+
+    border-radius: 60px;
+    padding: 10px;
+  }
+}

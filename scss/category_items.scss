@@ -1,0 +1,10 @@
+@import "scss/style.scss";
+
+.to_grid {
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 30px;
+}

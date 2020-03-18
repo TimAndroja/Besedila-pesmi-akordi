@@ -1,20 +1,21 @@
 @import "./style.scss";
 
-$navbar_height: 70px;
+$navbar_height: 80px;
 
 .nav {
-  padding: 6px $margin_side 0px $margin_side;
+  padding: 5px $margin_side 0px $margin_side;
   display: grid;
-  grid-template-columns: 4fr 3fr 4fr;
+  grid-template-columns: 10fr 9fr 10fr;
 
   grid-column-gap: 0px;
   height: $navbar_height;
   background-color: map-get($colors, navbar_background);
   width: 100%;
   font-size: 30px;
-  box-shadow: 1px 1px transparent;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+
   h1 {
     font-size: 25px;
     line-height: 0.9;
@@ -25,7 +26,7 @@ $navbar_height: 70px;
     line-height: 0.9;
   }
   .besedilapesmi {
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .akordichords {
     display: flex;
@@ -39,25 +40,31 @@ $navbar_height: 70px;
 .logo {
   background-image: url("/static/notes.png");
   background-repeat: no-repeat;
-  background-position-x: 168px;
-  background-position-y: 29px;
-  background-size: 90px;
+  background-position-x: 167px;
+  background-position-y: 33px;
+  background-size: 92px;
 }
 
 .searchbar {
   display: grid;
-  grid-template-columns: 9fr 1fr;
-  margin-top: 5px;
+
+  grid-template-columns: 10fr 1fr;
+  margin: 8px 0px 14px 0px;
   line-height: 1;
+
+  border: 2px solid rgba(128, 128, 128, 0.6);
+  border-radius: 2px;
+
+  color: rgba(44, 42, 42, 0.877);
+  font-size: 24px;
+  align-content: center;
 
   input {
     width: 100%; /* force to expand to container's width */
     border: none;
-    border: 3px solid rgba(44, 42, 42, 0.877);
-    border-radius: 3px;
-    padding: 4px 0 4px 0;
-    color: rgba(44, 42, 42, 0.877);
-    font-size: 28px;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 5px 5px 2px 6px;
   }
 
   input::placeholder {
@@ -65,23 +72,23 @@ $navbar_height: 70px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
     font-weight: 300;
-    margin-right: 4px;
   }
 
   input:focus {
     outline: none;
-    border: 3px solid rgba(128, 128, 128, 0.6);
   }
 
   .searchicon {
-    margin-top: 6px;
-    margin-left: 8px;
+    margin-top: 3px;
+    text-align: center;
 
     img {
-      height: 32px;
+      height: 29px;
+      opacity: 0.6;
     }
     img:hover {
-      opacity: 0.6;
+      opacity: 1;
+      cursor: pointer;
     }
   }
 }
@@ -92,7 +99,7 @@ $navbar_height: 70px;
   justify-content: flex-end;
   text-align: right;
 
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.2;
