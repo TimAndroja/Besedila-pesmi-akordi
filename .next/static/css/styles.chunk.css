@@ -24,7 +24,7 @@ body {
   height: 80px;
   width: 100%;
   font-size: 30px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 130px 0px 30px rgba(0, 0, 0, 0.1);
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055); }
   .nav h1 {
@@ -263,15 +263,17 @@ body {
 
 .kategorije {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-around; }
   .kategorije .kategorija {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 60px;
-    padding: 10px; }
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 8px; }
     .kategorije .kategorija h2 {
-      font-size: 19px; }
+      font-size: 18px; }
     .kategorije .kategorija h2:hover {
       color: #fdcfb0;
       cursor: pointer; }
