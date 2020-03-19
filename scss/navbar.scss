@@ -46,12 +46,13 @@ $navbar_height: 80px;
 
 .searchbar {
   display: grid;
-
+  width: 100%;
   grid-template-columns: 10fr 1fr;
-  margin: 10px 0px 16px 0px;
+  height: 46px;
+  margin-top: 11px;
   line-height: 1;
 
-  border: 4px solid rgba(128, 128, 128, 0.76);
+  border: 2px solid rgba(128, 128, 128, 0.76);
   border-radius: 3px;
   background-color: map-get($colors, search_background);
   color: rgba(44, 42, 42, 0.877);
@@ -62,8 +63,8 @@ $navbar_height: 80px;
     width: 100%; /* force to expand to container's width */
     border: none;
     background-color: transparent;
-    font-size: 24px;
-    padding: 5px 5px 2px 6px;
+    font-size: 26px;
+    padding: 4px 4px 0px 4px;
   }
 
   input::placeholder {
@@ -78,11 +79,12 @@ $navbar_height: 80px;
   }
 
   .searchicon {
-    margin-top: 3px;
-    text-align: center;
+    margin-top: 4px;
+    text-align: right;
+    margin-right: 8px;
 
     img {
-      height: 29px;
+      height: 26px;
       opacity: 0.6;
     }
     img:hover {
@@ -100,7 +102,7 @@ $navbar_height: 80px;
 
   margin-bottom: 13px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
 
   .dodaj_pesem {

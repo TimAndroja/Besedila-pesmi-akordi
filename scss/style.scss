@@ -8,13 +8,13 @@ $colors: (
   category_color: rgba(0, 0, 0, 0.801),
   linebreak: rgba(0, 0, 0, 0.411),
   kategorija: #ec9358f3,
-  nav_right: #a58977f3,
+  nav_right: black,
   kategorija_hover: #ec935867,
   search_background: rgba(0, 0, 0, 0.018)
 );
 
 $margin_side: 5%;
-$card_border_radius: 3px;
+$default_margin: 25px;
 
 * {
   box-sizing: border-box;

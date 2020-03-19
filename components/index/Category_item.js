@@ -24,9 +24,8 @@ class Category_item extends React.Component {
 
             <div className="carddata">
               <h5 className="title">{this.props.song.title}</h5>
-
-              <h6 className="author">{this.props.song.id}</h6>
-              <div className="views">{this.props.song.id}</div>
+              <h6 className="author"> glasbena skupina {this.props.song.id}</h6>
+              <div className="views">{this.props.song.id} ogledov</div>
             </div>
           </div>
         </a>

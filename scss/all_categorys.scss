@@ -1,8 +1,7 @@
 @import "scss/style.scss";
 
 .kategorije {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: $default_margin;
   display: flex;
   justify-content: space-between;
 

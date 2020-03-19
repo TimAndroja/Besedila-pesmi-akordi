@@ -528,17 +528,17 @@ class Category_item extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compone
       className: "author",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 27
       },
       __self: this
-    }, this.props.song.id), __jsx("div", {
+    }, " glasbena skupina ", this.props.song.id), __jsx("div", {
       className: "views",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 28
       },
       __self: this
-    }, this.props.song.id)))));
+    }, this.props.song.id, " ogledov")))));
   }
 
 }
@@ -637,16 +637,16 @@ class Index_content extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=6").then(res => this.setState({
       songs_popularno: res.data
     }));
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=4").then(res => this.setState({
       songs_slovenske: res.data
     }));
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=4").then(res => this.setState({
       songs_dalmatinske: res.data
     }));
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=4").then(res => this.setState({
       songs_tuje: res.data
     }));
-    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=4").then(res => this.setState({
       songs_narodno_zabavne: res.data
     }));
   }
@@ -690,7 +690,7 @@ class Index_content extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 46
       },
       __self: this
-    }, "Trenutno popularno")), __jsx("div", {
+    }, "Trenutno popularno:")), __jsx("div", {
       className: "linebreak",
       __source: {
         fileName: _jsxFileName,
@@ -712,166 +712,180 @@ class Index_content extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }))), __jsx("div", {
+      className: "split_categorys",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 53
       },
       __self: this
     }, __jsx("div", {
-      className: "category_name",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 54
       },
       __self: this
-    }, __jsx("h2", {
+    }, __jsx("div", {
+      className: "category_name2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 55
       },
       __self: this
-    }, "Slovenska glasba")), __jsx("div", {
-      className: "linebreak",
+    }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 56
       },
       __self: this
-    }), __jsx("div", {
-      className: "to_grid",
+    }, "Narodno Zabavna Glasba:")), __jsx("div", {
+      className: "linebreak2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 58
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
       },
       __self: this
     }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
       songs: this.state.songs_slovenske,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 60
       },
       __self: this
     }))), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "category_name",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 63
       },
       __self: this
-    }, __jsx("h2", {
+    }, __jsx("div", {
+      className: "category_name2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 64
       },
       __self: this
-    }, "Dalmatinska glasba")), __jsx("div", {
-      className: "linebreak",
+    }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 65
       },
       __self: this
-    }), __jsx("div", {
-      className: "to_grid",
+    }, "Dalmatinska glasba:")), __jsx("div", {
+      className: "linebreak2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 67
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
       },
       __self: this
     }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
       songs: this.state.songs_dalmatinske,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 69
       },
       __self: this
-    }))), __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "category_name",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 72
-      },
-      __self: this
-    }, __jsx("h2", {
+    })))), __jsx("div", {
+      className: "split_categorys",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 73
       },
       __self: this
-    }, "Tuja glasba")), __jsx("div", {
-      className: "linebreak",
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "category_name2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 75
       },
       __self: this
-    }), __jsx("div", {
-      className: "to_grid",
+    }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 76
+      },
+      __self: this
+    }, "Tuja glasba:")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
       },
       __self: this
     }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
       songs: this.state.songs_tuje,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 80
       },
       __self: this
     }))), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 83
       },
       __self: this
     }, __jsx("div", {
-      className: "category_name",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82
-      },
-      __self: this
-    }, "Narodno Zabavna Glasba")), __jsx("div", {
-      className: "linebreak",
+      className: "category_name2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 84
       },
       __self: this
-    }), __jsx("div", {
-      className: "to_grid",
+    }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 85
+      },
+      __self: this
+    }, "Slovenska glsaba:")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
       },
       __self: this
     }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
       songs: this.state.songs_narodno_zabavne,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 89
       },
       __self: this
-    }))));
+    })))));
   }
 
 }

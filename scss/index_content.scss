@@ -5,18 +5,39 @@
 }
 
 .category_name {
-  font-size: 30px;
+  font-size: 26px;
+  margin-top: 25px;
   color: map-get($colors, category_color);
   font-weight: bold;
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.category_name2 {
+  font-size: 26px;
+  margin-top: $default_margin;
+  color: map-get($colors, category_color);
+  font-weight: bold;
+  h2 {
+    font-size: 26px;
+  }
 }
 
 .linebreak {
-  margin-top: 2px;
-  margin-bottom: 30px;
-  border-bottom: 3px solid map-get($colors, linebreak);
-  border-radius: 5px;
+  margin-top: 4px;
+  border-bottom: 2px solid map-get($colors, linebreak);
 }
 
-h2 {
-  font-size: 24px;
+.linebreak2 {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid map-get($colors, linebreak);
+}
+
+.split_categorys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
 }

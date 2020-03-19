@@ -20,19 +20,19 @@ class Index_content extends Component {
       .then(res => this.setState({ songs_popularno: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=3")
+      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
       .then(res => this.setState({ songs_slovenske: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=3")
+      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
       .then(res => this.setState({ songs_dalmatinske: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=3")
+      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
       .then(res => this.setState({ songs_tuje: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=3")
+      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
       .then(res => this.setState({ songs_narodno_zabavne: res.data }));
   }
 
@@ -43,47 +43,51 @@ class Index_content extends Component {
         <Index_description1 />
         <div>
           <div className="category_name">
-            <h2>Trenutno popularno</h2>
+            <h2>Trenutno popularno:</h2>
           </div>
           <div className="linebreak"></div>
           <div className="to_grid">
             <Category_items songs={this.state.songs_popularno} />
           </div>
         </div>
-        <div>
-          <div className="category_name">
-            <h2>Slovenska glasba</h2>
+        <div className="split_categorys">
+          <div>
+            <div className="category_name2">
+              <h2>Narodno Zabavna Glasba:</h2>
+            </div>
+            <div className="linebreak2"></div>
+            <div className="to_grid2">
+              <Category_items songs={this.state.songs_slovenske} />
+            </div>
           </div>
-          <div className="linebreak"></div>
-          <div className="to_grid">
-            <Category_items songs={this.state.songs_slovenske} />
-          </div>
-        </div>
-        <div>
-          <div className="category_name">
-            <h2>Dalmatinska glasba</h2>
-          </div>
-          <div className="linebreak"></div>
-          <div className="to_grid">
-            <Category_items songs={this.state.songs_dalmatinske} />
-          </div>
-        </div>
-        <div>
-          <div className="category_name">
-            <h2>Tuja glasba</h2>
-          </div>
-          <div className="linebreak"></div>
-          <div className="to_grid">
-            <Category_items songs={this.state.songs_tuje} />
+          <div>
+            <div className="category_name2">
+              <h2>Dalmatinska glasba:</h2>
+            </div>
+            <div className="linebreak2"></div>
+            <div className="to_grid3">
+              <Category_items songs={this.state.songs_dalmatinske} />
+            </div>
           </div>
         </div>
-        <div>
-          <div className="category_name">
-            <h2>Narodno Zabavna Glasba</h2>
+        <div className="split_categorys">
+          <div>
+            <div className="category_name2">
+              <h2>Tuja glasba:</h2>
+            </div>
+            <div className="linebreak"></div>
+            <div className="to_grid2">
+              <Category_items songs={this.state.songs_tuje} />
+            </div>
           </div>
-          <div className="linebreak"></div>
-          <div className="to_grid">
-            <Category_items songs={this.state.songs_narodno_zabavne} />
+          <div>
+            <div className="category_name2">
+              <h2>Slovenska glsaba:</h2>
+            </div>
+            <div className="linebreak"></div>
+            <div className="to_grid3">
+              <Category_items songs={this.state.songs_narodno_zabavne} />
+            </div>
           </div>
         </div>
       </div>

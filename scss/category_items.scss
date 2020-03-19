@@ -2,9 +2,24 @@
 
 .to_grid {
   display: grid;
-  margin-left: 10px;
-  margin-right: 10px;
   grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 60px;
+  margin-top: 25px;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}
+
+.to_grid2 {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}
+
+.to_grid3 {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 50px;
   grid-row-gap: 30px;
 }
