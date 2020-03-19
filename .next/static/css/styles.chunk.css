@@ -17,14 +17,14 @@ body {
   line-height: 1.5; }
 
 .nav {
-  padding: 5px 5% 0px 5%;
+  padding: 4px 5% 0px 5%;
   display: grid;
   grid-template-columns: 10fr 9fr 10fr;
   grid-column-gap: 0px;
   height: 80px;
   width: 100%;
   font-size: 30px;
-  box-shadow: 130px 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055); }
   .nav h1 {
@@ -52,10 +52,11 @@ body {
 .searchbar {
   display: grid;
   grid-template-columns: 10fr 1fr;
-  margin: 8px 0px 14px 0px;
+  margin: 10px 0px 16px 0px;
   line-height: 1;
-  border: 2px solid rgba(128, 128, 128, 0.6);
-  border-radius: 2px;
+  border: 4px solid rgba(128, 128, 128, 0.76);
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.018);
   color: rgba(44, 42, 42, 0.877);
   font-size: 24px;
   align-content: center; }
@@ -87,13 +88,13 @@ body {
   align-items: center;
   justify-content: flex-end;
   text-align: right;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.2; }
   .right_menu a {
     text-decoration: none;
-    color: black; }
+    color: #a58977f3; }
 
 * {
   box-sizing: border-box;
@@ -124,6 +125,75 @@ body {
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+.default_margin {
+  margin: 0 5% 0 5%; }
+
+.category_name {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: bold; }
+
+.linebreak {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.411);
+  border-radius: 5px; }
+
+h2 {
+  font-size: 24px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+.kategorije {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; }
+  .kategorije .kategorija {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ec9358f3; }
+    .kategorije .kategorija h2 {
+      font-size: 18px;
+      font-weight: 700; }
+    .kategorije .kategorija h2:hover {
+      color: #ec935867;
+      cursor: pointer; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+.opis1 {
+  margin: 20px 0px 20px 0px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.02); }
 
 * {
   box-sizing: border-box;
@@ -163,7 +233,6 @@ body {
   text-decoration: none; }
 
 .cardimagediv {
-  background-image: url("https://img.youtube.com/vi/hRr_vvtVJlE/0.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-top-left-radius: 3px;
@@ -212,71 +281,6 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 60px;
   grid-row-gap: 30px; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-  line-height: 1.5; }
-
-.category_name {
-  margin-top: 20px;
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.801);
-  font-weight: bold; }
-
-.linebreak {
-  margin-top: 2px;
-  margin-bottom: 30px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.411);
-  border-radius: 5px; }
-
-h2 {
-  font-size: 24px; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-  line-height: 1.5; }
-
-.default_margin {
-  margin: 0 5% 0 5%; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-  line-height: 1.5; }
-
-.kategorije {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-around; }
-  .kategorije .kategorija {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.02);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 8px; }
-    .kategorije .kategorija h2 {
-      font-size: 18px; }
-    .kategorije .kategorija h2:hover {
-      color: #fdcfb0;
-      cursor: pointer; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

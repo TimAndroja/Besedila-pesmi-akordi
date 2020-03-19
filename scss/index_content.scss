@@ -3,3 +3,20 @@
 .default_margin {
   margin: 0 $margin_side 0 $margin_side;
 }
+
+.category_name {
+  font-size: 30px;
+  color: map-get($colors, category_color);
+  font-weight: bold;
+}
+
+.linebreak {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid map-get($colors, linebreak);
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 24px;
+}

@@ -32,8 +32,7 @@ class Navbar extends React.Component {
             <div></div>
             <div className="dodaj_pesem">
               <a href="">
-                Dodaj svoje <br />
-                besedio/akorde
+                Dodaj svoje <br /> Besedilo/Akorde
               </a>
             </div>
           </div>

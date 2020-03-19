@@ -88,468 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./components/All_categorys.js":
-/*!*************************************!*\
-  !*** ./components/All_categorys.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/All_categorys.scss */ "./scss/All_categorys.scss");
-/* harmony import */ var _scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\All_categorys.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-class All_categorys extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("div", {
-      className: "kategorije",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, "Slovenske pesmi")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, " Dalmatinske pesmi")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }, "Angle\u0161ke pesmi")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, "Ljudske pesmi")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
-    }, "Slovenska popevka")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
-    }, "Narodno zabavna glasba")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, "Otro\u0161ke pesmice")), __jsx("div", {
-      className: "kategorija",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, "Bo\u017Ei\u010Dne pesmi")));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (All_categorys);
-
-/***/ }),
-
-/***/ "./components/Category.js":
-/*!********************************!*\
-  !*** ./components/Category.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Category_items__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Category_items */ "./components/Category_items.js");
-/* harmony import */ var _scss_category_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/category.scss */ "./scss/category.scss");
-/* harmony import */ var _scss_category_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_category_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\Category.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-
-
-class Category extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
-  render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "category_name",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }, "Kategorija:")), __jsx("div", {
-      className: "linebreak",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }), __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    })));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Category);
-
-/***/ }),
-
-/***/ "./components/Category_item.js":
-/*!*************************************!*\
-  !*** ./components/Category_item.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/category_item.scss */ "./scss/category_item.scss");
-/* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_category_item_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\Category_item.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-
-class Category_item extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
-  render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    }, __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    }, __jsx("a", {
-      className: "cardlink",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "cardwrapper",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "cardimagediv",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx("img", {
-      className: "cardimage",
-      src: "https://img.youtube.com/vi/FOODhMCWJsc/0.jpg",
-      alt: "test",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    })), __jsx("div", {
-      className: "carddata",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, __jsx("h5", {
-      className: "title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    }, "Naslov"), __jsx("h6", {
-      className: "author",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }, "Izvajalec"), __jsx("div", {
-      className: "views",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }, "1552 ogledov"))))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Category_item);
-
-/***/ }),
-
-/***/ "./components/Category_items.js":
-/*!**************************************!*\
-  !*** ./components/Category_items.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Category_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Category_item */ "./components/Category_item.js");
-/* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/category_items.scss */ "./scss/category_items.scss");
-/* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_category_items_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\Category_items.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-
-
-class Category_items extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
-  render() {
-    return __jsx("div", {
-      className: "to_grid",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }), __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }), __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }), __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }), __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }), __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Category_items);
-
-/***/ }),
-
-/***/ "./components/Index_content.js":
-/*!*************************************!*\
-  !*** ./components/Index_content.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Category__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Category */ "./components/Category.js");
-/* harmony import */ var _scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/Index_content.scss */ "./scss/Index_content.scss");
-/* harmony import */ var _scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _All_categorys__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./All_categorys */ "./components/All_categorys.js");
-var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\Index_content.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-class Index_content extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("div", {
-      className: "default_margin",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, __jsx(_All_categorys__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }), __jsx(_Category__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      value: "Najbolj gledano:",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }), __jsx(_Category__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      value: "Slovenske pesmi:",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }), __jsx(_Category__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      value: "Ljudske pesmi:",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Index_content);
-
-/***/ }),
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -745,12 +287,638 @@ class Navbar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 35
       },
       __self: this
-    }), "besedio/akorde")))));
+    }), " Besedilo/Akorde")))));
   }
 
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./components/index/All_categorys.js":
+/*!*******************************************!*\
+  !*** ./components/index/All_categorys.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/All_categorys.scss */ "./scss/All_categorys.scss");
+/* harmony import */ var _scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\index\\All_categorys.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class All_categorys extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return __jsx("div", {
+      className: "kategorije",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, "Slovenske pesmi")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, " Dalmatinske pesmi")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, "Angle\u0161ke pesmi")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, "Ljudske pesmi")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, "Slovenska popevka")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "Narodno zabavna glasba")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, "Otro\u0161ke pesmice")), __jsx("div", {
+      className: "kategorija",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, "Bo\u017Ei\u010Dne pesmi")));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (All_categorys);
+
+/***/ }),
+
+/***/ "./components/index/Category_item.js":
+/*!*******************************************!*\
+  !*** ./components/index/Category_item.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scss/category_item.scss */ "./scss/category_item.scss");
+/* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_category_item_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\index\\Category_item.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+class Category_item extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "get_youtube_image", () => {
+      return {
+        backgroundImage: `url(https://img.youtube.com/vi/hkadAtcoK_o/0.jpg)` //${Background}
+
+      };
+    });
+  }
+
+  render() {
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx("a", {
+      className: "cardlink",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "cardwrapper",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "cardimagediv",
+      style: this.get_youtube_image(),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "cardimage",
+      src: "https://img.youtube.com/vi/FOODhMCWJsc/0.jpg",
+      alt: "test",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "carddata",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, __jsx("h5", {
+      className: "title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, this.props.song.title), __jsx("h6", {
+      className: "author",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, this.props.song.id), __jsx("div", {
+      className: "views",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, this.props.song.id)))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Category_item);
+
+/***/ }),
+
+/***/ "./components/index/Category_items.js":
+/*!********************************************!*\
+  !*** ./components/index/Category_items.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Category_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Category_item */ "./components/index/Category_item.js");
+/* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/category_items.scss */ "./scss/category_items.scss");
+/* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_category_items_scss__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\index\\Category_items.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+class Category_items extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return this.props.songs.map(song => __jsx(_Category_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: song.id,
+      song: song,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Category_items);
+
+/***/ }),
+
+/***/ "./components/index/Index_content.js":
+/*!*******************************************!*\
+  !*** ./components/index/Index_content.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/Index_content.scss */ "./scss/Index_content.scss");
+/* harmony import */ var _scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _All_categorys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./All_categorys */ "./components/index/All_categorys.js");
+/* harmony import */ var _Index_description1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Index_description1 */ "./components/index/Index_description1.js");
+/* harmony import */ var _Category_items__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Category_items */ "./components/index/Category_items.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\index\\Index_content.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+class Index_content extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "state", {
+      songs_popularno: [],
+      songs_slovenske: [],
+      // slovenske and !narodnozabavne
+      songs_dalmatinske: [],
+      songs_tuje: [],
+      songs_narodno_zabavne: []
+    });
+  }
+
+  componentDidMount() {
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=6").then(res => this.setState({
+      songs_popularno: res.data
+    }));
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+      songs_slovenske: res.data
+    }));
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+      songs_dalmatinske: res.data
+    }));
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+      songs_tuje: res.data
+    }));
+    axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("https://jsonplaceholder.typicode.com/todos?_limit=3").then(res => this.setState({
+      songs_narodno_zabavne: res.data
+    }));
+  }
+
+  render() {
+    return __jsx("div", {
+      className: "default_margin",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, __jsx(_All_categorys__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }), __jsx(_Index_description1__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "category_name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, "Trenutno popularno")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      songs: this.state.songs_popularno,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "category_name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, "Slovenska glasba")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      songs: this.state.songs_slovenske,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "category_name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
+      },
+      __self: this
+    }, "Dalmatinska glasba")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      songs: this.state.songs_dalmatinske,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "category_name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    }, "Tuja glasba")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
+      },
+      __self: this
+    }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      songs: this.state.songs_tuje,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "category_name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      },
+      __self: this
+    }, __jsx("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: this
+    }, "Narodno Zabavna Glasba")), __jsx("div", {
+      className: "linebreak",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "to_grid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85
+      },
+      __self: this
+    }, __jsx(_Category_items__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      songs: this.state.songs_narodno_zabavne,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Index_content);
+
+/***/ }),
+
+/***/ "./components/index/Index_description1.js":
+/*!************************************************!*\
+  !*** ./components/index/Index_description1.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/index_description1.scss */ "./scss/index_description1.scss");
+/* harmony import */ var _scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\index\\Index_description1.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class Index_description1 extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "opis1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem perspiciatis laborum perferendis sint doloribus omnis tenetur quae ullam magnam eius, ratione tempora libero iste non. Fuga magnam animi illo. Dolorum repellat fugit nostrum quasi reiciendis vel corporis voluptate minima explicabo et, eveniet reprehenderit, quos eligendi voluptates ipsam nobis doloribus ex dolorem officiis unde iste. Mollitia alias illo cupiditate dicta. Blanditiis aspernatur amet sed"));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Index_description1);
 
 /***/ }),
 
@@ -2442,10 +2610,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components//Layout */ "./components/Layout.js");
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/style.scss */ "./scss/style.scss");
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Index_content__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Index_content */ "./components/Index_content.js");
+/* harmony import */ var _components_index_Index_content__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/index/Index_content */ "./components/index/Index_content.js");
 var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -2459,14 +2627,14 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 10
       },
       __self: this
-    }, __jsx(_components_Index_content__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, __jsx(_components_index_Index_content__WEBPACK_IMPORTED_MODULE_4__["default"], {
       className: "default_margin",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 11
       },
       __self: this
     }));
@@ -2500,17 +2668,6 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 
 /***/ }),
 
-/***/ "./scss/category.scss":
-/*!****************************!*\
-  !*** ./scss/category.scss ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./scss/category_item.scss":
 /*!*********************************!*\
   !*** ./scss/category_item.scss ***!
@@ -2526,6 +2683,17 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 /*!**********************************!*\
   !*** ./scss/category_items.scss ***!
   \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./scss/index_description1.scss":
+/*!**************************************!*\
+  !*** ./scss/index_description1.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2566,7 +2734,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -2575,6 +2743,17 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
 
 module.exports = __webpack_require__(/*! C:\Users\AndrojaTim\Documents\Projects\besedila_pesmi_akordi\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 
