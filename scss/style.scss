@@ -16,14 +16,26 @@ $colors: (
 
 //RESPONSIVE
 $tablet: 1700px;
-$mobile: 0px;
-$tablet: 0px;
+$mobile: 800px;
+
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
 
 //TRANSITION TIEM
 $link_transition_time: 0.2s;
 
 $margin_side: 5%;
 $default_margin: 40px;
+$default_margin_mobile: 20px;
 
 * {
   box-sizing: border-box;

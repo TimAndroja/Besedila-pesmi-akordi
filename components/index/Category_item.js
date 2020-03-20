@@ -22,9 +22,20 @@ class Category_item extends React.Component {
                   alt="test"
                 />
               </div>
-              <div className="views">
-                {this.props.song.id}0231
-                <img src="../static/eye.png" alt="" className="view_image" />
+              <div className="stats">
+                <div className="views">
+                  {this.props.song.id}0231
+                  <img src="../static/eye.png" alt="" className="view_image" />
+                </div>
+
+                <div className="likes">
+                  {this.props.song.id}31
+                  <img
+                    src="../static/upvote.png"
+                    alt=""
+                    className="like_image"
+                  />
+                </div>
               </div>
             </div>
 

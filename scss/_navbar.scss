@@ -15,6 +15,11 @@ $navbar_height: 80px;
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055);
   color: rgb(44, 62, 80);
+
+  @include mobile {
+    grid-template-columns: 0fr 1fr 0fr;
+  }
+
   h1 {
     font-size: 25px;
     line-height: 0.9;
@@ -42,6 +47,11 @@ $navbar_height: 80px;
   background-position-x: 167px;
   background-position-y: 33px;
   background-size: 92px;
+
+  @include mobile {
+    width: 0;
+    visibility: hidden;
+  }
 }
 
 .searchbar {
@@ -52,6 +62,8 @@ $navbar_height: 80px;
   margin-top: 11px;
   line-height: 1;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 
   border: 1px solid rgba(128, 128, 128, 0.76);
   border-radius: 3px;
@@ -111,5 +123,10 @@ $navbar_height: 80px;
   a {
     text-decoration: none;
     color: map-get($colors, nav_right);
+  }
+
+  @include mobile {
+    width: 0;
+    visibility: hidden;
   }
 }

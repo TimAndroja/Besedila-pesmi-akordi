@@ -1,4 +1,4 @@
-@import "scss/style.scss";
+@import "./style.scss";
 
 .default_margin {
   margin: 0 $margin_side 0 $margin_side;
@@ -12,6 +12,14 @@
 
   h2 {
     font-size: 26px;
+
+    @include mobile {
+      font-size: 5vw;
+    }
+  }
+
+  @include mobile {
+    margin-top: $default_margin_mobile;
   }
 }
 
@@ -20,6 +28,9 @@
   margin-top: $default_margin;
   color: map-get($colors, category_color);
   font-weight: bold;
+  @include mobile {
+    visibility: hidden;
+  }
 
   h2 {
     font-size: 26px;
@@ -45,6 +56,9 @@
   margin-top: 4px;
   margin-bottom: 20px;
   border-bottom: 2px solid map-get($colors, linebreak);
+  @include mobile {
+    visibility: hidden;
+  }
 }
 
 .split_categorys {
@@ -52,4 +66,10 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 30px;
+
+  @include mobile {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
 }

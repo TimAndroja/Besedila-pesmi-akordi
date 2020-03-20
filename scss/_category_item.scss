@@ -1,25 +1,41 @@
-@import "scss/style.scss";
-.views {
-  display: flex;
+@import "./style.scss";
+
+.stats {
   flex-direction: row;
   margin: auto;
-  font-size: 13px;
+
+  font-size: 18px;
   font-weight: 500;
   color: map-get($colors, card_viewcount);
   position: absolute;
-  top: 90%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.7);
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear;
+}
+.views {
+  display: flex;
 
   .view_image {
-    height: 10px;
-    margin-top: 6px;
+    height: 12px;
+    margin-top: 7px;
     margin-left: 2px;
-    filter: opacity(0.9);
+    filter: opacity(0.7);
   }
+}
+
+.likes {
+  margin-left: 10px;
+}
+.like_image {
+  height: 14px;
+  width: 15px;
+
+  margin-left: 2px;
+
+  filter: opacity(0.7);
 }
 
 .card_image_wrapper {
@@ -49,7 +65,7 @@
     color: map-get($colors, card_title_hover);
     transition: 0.5s ease-in-out;
   }
-  .views {
+  .stats {
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
   }
@@ -63,7 +79,7 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   transition: 0.5s ease-in-out;
-  filter: brightness(85%);
+  filter: brightness(60%);
 }
 .cardimage {
   width: 100%;

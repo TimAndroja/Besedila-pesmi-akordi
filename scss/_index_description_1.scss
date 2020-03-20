@@ -1,0 +1,15 @@
+@import "./style.scss";
+.opis1 {
+  margin: $default_margin 0px 0px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5f7fa8e;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+
+  @include mobile {
+    margin-top: $default_margin_mobile;
+    font-size: 10px;
+  }
+}
