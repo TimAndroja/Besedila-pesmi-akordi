@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../scss/navbar.scss";
+import "../scss/_navbar.scss";
 
 class Navbar extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class Navbar extends React.Component {
               <input type="text" placeholder="Brskaj skladbe, avtorje" />
             </div>
             <div className="searchicon">
-              <img src="../static/search_icon.png" alt="Išči" />{" "}
+              <img src="../static/search_icon.png" alt="Išči" />
             </div>
           </div>
 

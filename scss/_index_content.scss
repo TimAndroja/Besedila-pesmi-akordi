@@ -1,0 +1,55 @@
+@import "scss/style.scss";
+
+.default_margin {
+  margin: 0 $margin_side 0 $margin_side;
+}
+
+.category_name {
+  font-size: 26px;
+  margin-top: 25px;
+  color: map-get($colors, category_color);
+  font-weight: bold;
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.category_name2 {
+  font-size: 26px;
+  margin-top: $default_margin;
+  color: map-get($colors, category_color);
+  font-weight: bold;
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.category_hover {
+  transition: $link_transition_time ease-in-out;
+}
+
+.category_hover:hover {
+  color: map-get($colors, category_color_hover);
+  cursor: pointer;
+  transition: $link_transition_time ease-in-out;
+}
+
+.linebreak {
+  margin-top: 4px;
+  border-bottom: 2px solid map-get($colors, linebreak);
+}
+
+.linebreak2 {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid map-get($colors, linebreak);
+}
+
+.split_categorys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}

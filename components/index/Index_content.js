@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../scss/Index_content.scss";
+import "../../scss/_index_content.scss";
 import All_categorys from "./All_categorys";
 import Index_description1 from "./Index_description1";
 import Category_items from "./Category_items";
@@ -44,7 +44,7 @@ class Index_content extends Component {
         <div>
           <div className="category_name">
             <h2>
-              <a className="category_hover"> Trenutno popularno: </a>
+              <a className="category_hover"> Trenutno popularna glasba: </a>
             </h2>
           </div>
           <div className="linebreak"></div>
@@ -67,7 +67,7 @@ class Index_content extends Component {
           <div>
             <div className="category_name2">
               <h2>
-                <a className="category_hover">Dalmatinska glasba:</a>
+                <a className="category_hover">Dalmatinske pesmi:</a>
               </h2>
             </div>
             <div className="linebreak2"></div>
@@ -91,7 +91,7 @@ class Index_content extends Component {
           <div>
             <div className="category_name2">
               <h2>
-                <a className="category_hover">Slovenska glsaba:</a>
+                <a className="category_hover">Slovenske pesmi:</a>
               </h2>
             </div>
             <div className="linebreak"></div>
