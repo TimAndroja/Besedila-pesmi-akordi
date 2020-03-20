@@ -24,6 +24,11 @@
   }
 }
 
+.category_hover:hover {
+  color: map-get($colors, category_color_hover);
+  cursor: pointer;
+}
+
 .linebreak {
   margin-top: 4px;
   border-bottom: 2px solid map-get($colors, linebreak);

@@ -43,7 +43,9 @@ class Index_content extends Component {
         <Index_description1 />
         <div>
           <div className="category_name">
-            <h2>Trenutno popularno:</h2>
+            <h2>
+              <a className="category_hover"> Trenutno popularno: </a>
+            </h2>
           </div>
           <div className="linebreak"></div>
           <div className="to_grid">
@@ -53,7 +55,9 @@ class Index_content extends Component {
         <div className="split_categorys">
           <div>
             <div className="category_name2">
-              <h2>Narodno Zabavna Glasba:</h2>
+              <h2>
+                <a className="category_hover">Narodno Zabavna Glasba: </a>{" "}
+              </h2>
             </div>
             <div className="linebreak2"></div>
             <div className="to_grid2">
@@ -62,7 +66,9 @@ class Index_content extends Component {
           </div>
           <div>
             <div className="category_name2">
-              <h2>Dalmatinska glasba:</h2>
+              <h2>
+                <a className="category_hover">Dalmatinska glasba:</a>
+              </h2>
             </div>
             <div className="linebreak2"></div>
             <div className="to_grid3">
@@ -73,7 +79,9 @@ class Index_content extends Component {
         <div className="split_categorys">
           <div>
             <div className="category_name2">
-              <h2>Tuja glasba:</h2>
+              <h2>
+                <a className="category_hover">Tuja glasba:</a>
+              </h2>
             </div>
             <div className="linebreak"></div>
             <div className="to_grid2">
@@ -82,7 +90,9 @@ class Index_content extends Component {
           </div>
           <div>
             <div className="category_name2">
-              <h2>Slovenska glsaba:</h2>
+              <h2>
+                <a className="category_hover">Slovenska glsaba:</a>
+              </h2>
             </div>
             <div className="linebreak"></div>
             <div className="to_grid3">

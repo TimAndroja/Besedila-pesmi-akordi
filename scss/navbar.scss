@@ -11,10 +11,10 @@ $navbar_height: 80px;
   background-color: map-get($colors, navbar_background);
   width: 100%;
   font-size: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055);
-
+  color: rgb(44, 62, 80);
   h1 {
     font-size: 25px;
     line-height: 0.9;
@@ -51,11 +51,12 @@ $navbar_height: 80px;
   height: 46px;
   margin-top: 11px;
   line-height: 1;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 
-  border: 2px solid rgba(128, 128, 128, 0.76);
+  border: 1px solid rgba(128, 128, 128, 0.76);
   border-radius: 3px;
   background-color: map-get($colors, search_background);
-  color: rgba(44, 42, 42, 0.877);
+  color: rgba(44, 42, 42, 0.9);
   font-size: 24px;
   align-content: center;
 
@@ -63,15 +64,16 @@ $navbar_height: 80px;
     width: 100%; /* force to expand to container's width */
     border: none;
     background-color: transparent;
-    font-size: 26px;
-    padding: 4px 4px 0px 4px;
+    font-size: 18px;
+
+    padding: 0px 8px 4px 8px;
   }
 
   input::placeholder {
-    color: gray;
+    color: rgba(0, 0, 0, 0.3);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   input:focus {
@@ -81,14 +83,13 @@ $navbar_height: 80px;
   .searchicon {
     margin-top: 4px;
     text-align: right;
-    margin-right: 8px;
+    margin-right: 10px;
 
     img {
-      height: 26px;
-      opacity: 0.6;
+      height: 22px;
     }
     img:hover {
-      opacity: 1;
+      opacity: 0.6;
       cursor: pointer;
     }
   }

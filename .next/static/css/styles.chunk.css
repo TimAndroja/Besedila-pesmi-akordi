@@ -12,6 +12,7 @@
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
@@ -24,9 +25,10 @@ body {
   height: 80px;
   width: 100%;
   font-size: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   background: #fff;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.055); }
+  border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+  color: #2c3e50; }
   .nav h1 {
     font-size: 25px;
     line-height: 0.9; }
@@ -56,10 +58,11 @@ body {
   height: 46px;
   margin-top: 11px;
   line-height: 1;
-  border: 2px solid rgba(128, 128, 128, 0.76);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(128, 128, 128, 0.76);
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.018);
-  color: rgba(44, 42, 42, 0.877);
+  background-color: white;
+  color: rgba(44, 42, 42, 0.9);
   font-size: 24px;
   align-content: center; }
   .searchbar input {
@@ -67,23 +70,22 @@ body {
     /* force to expand to container's width */
     border: none;
     background-color: transparent;
-    font-size: 26px;
-    padding: 4px 4px 0px 4px; }
+    font-size: 18px;
+    padding: 0px 8px 4px 8px; }
   .searchbar input::placeholder {
-    color: gray;
+    color: rgba(0, 0, 0, 0.3);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-    font-weight: 300; }
+    font-weight: 400; }
   .searchbar input:focus {
     outline: none; }
   .searchbar .searchicon {
     margin-top: 4px;
     text-align: right;
-    margin-right: 8px; }
+    margin-right: 10px; }
     .searchbar .searchicon img {
-      height: 26px;
-      opacity: 0.6; }
+      height: 22px; }
     .searchbar .searchicon img:hover {
-      opacity: 1;
+      opacity: 0.6;
       cursor: pointer; }
 
 .right_menu {
@@ -97,7 +99,7 @@ body {
   line-height: 1.2; }
   .right_menu a {
     text-decoration: none;
-    color: black; }
+    color: #2c3e50; }
 
 * {
   box-sizing: border-box;
@@ -105,6 +107,7 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
@@ -125,6 +128,7 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
@@ -135,6 +139,7 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
@@ -145,18 +150,22 @@ body {
 .category_name {
   font-size: 26px;
   margin-top: 25px;
-  color: rgba(0, 0, 0, 0.801);
+  color: #2c3e50;
   font-weight: bold; }
   .category_name h2 {
     font-size: 26px; }
 
 .category_name2 {
   font-size: 26px;
-  margin-top: 25px;
-  color: rgba(0, 0, 0, 0.801);
+  margin-top: 30px;
+  color: #2c3e50;
   font-weight: bold; }
   .category_name2 h2 {
     font-size: 26px; }
+
+.category_hover:hover {
+  color: #ff6633;
+  cursor: pointer; }
 
 .linebreak {
   margin-top: 4px;
@@ -179,23 +188,24 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
 
 .kategorije {
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between; }
   .kategorije .kategorija {
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
-    color: #ec9358f3; }
+    color: #ff6633; }
     .kategorije .kategorija h2 {
       font-size: 18px;
-      font-weight: 700; }
+      font-weight: 500; }
     .kategorije .kategorija h2:hover {
-      color: #ec935867;
+      color: #4e5860;
       cursor: pointer; }
 
 * {
@@ -204,15 +214,16 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
 
 .opis1 {
-  margin: 25px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   padding: 5px;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.02); }
+  background-color: #f5f7fa8e; }
 
 * {
   box-sizing: border-box;
@@ -220,6 +231,7 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
@@ -227,9 +239,10 @@ body {
 .views {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
+  font-size: 16px;
+  padding-top: 8px;
   font-weight: 300;
-  color: #88949e; }
+  color: #808b96; }
 
 .item {
   background-color: transparent; }
@@ -244,7 +257,7 @@ body {
   box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.3);
   cursor: pointer; }
   .cardwrapper:hover .title {
-    color: #fdcfb0; }
+    color: #ff6633; }
 
 .cardlink {
   text-decoration: none; }
@@ -261,21 +274,23 @@ body {
 
 .carddata {
   display: grid;
-  line-height: 1.5;
-  padding: 0 6px 12px 6px; }
+  line-height: normal;
+  padding: 0 8px 12px 8px; }
   .carddata .title {
-    font-weight: 7800;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 17px;
     color: #4e5860;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
   .carddata .author {
-    color: #74828e;
-    font-size: 16px;
-    font-weight: 500;
+    color: #808b96;
+    font-size: 17px;
+    font-weight: 300;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 0px; }
 
 * {
   box-sizing: border-box;
@@ -283,6 +298,7 @@ body {
   padding: 0; }
 
 body {
+  color: #4e5860;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   line-height: 1.5; }
@@ -298,14 +314,14 @@ body {
   display: grid;
   margin-top: 25px;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 50px;
+  grid-column-gap: 25px;
   grid-row-gap: 30px; }
 
 .to_grid3 {
   display: grid;
   margin-top: 25px;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 50px;
+  grid-column-gap: 25px;
   grid-row-gap: 30px; }
 
 

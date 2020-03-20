@@ -2,7 +2,8 @@
 .views {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
+  font-size: 16px;
+  padding-top: 8px;
   font-weight: 300;
   color: map-get($colors, card_viewcount);
 }
@@ -37,11 +38,11 @@
 }
 .carddata {
   display: grid;
-  line-height: 1.5;
-  padding: 0 6px 12px 6px;
+  line-height: normal;
+  padding: 0 8px 12px 8px;
   .title {
-    font-weight: 7800;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 17px;
     color: map-get($colors, card_title);
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -49,9 +50,11 @@
   }
   .author {
     color: map-get($colors, card_author);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 300;
     text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
+    padding-top: 0px;
   }
 }
