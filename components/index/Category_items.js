@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { Component } from "react";
 import Category_item from "./Category_item";
-import "../../scss/category_items.scss";
+import "../../scss/_category_items.scss";
 
 class Category_items extends React.Component {
   render() {

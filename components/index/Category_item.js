@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React, { Component } from "react";
-import "../../scss/category_item.scss";
+import "../../scss/_category_item.scss";
 
 class Category_item extends React.Component {
   get_youtube_image = () => {
     return {
-      backgroundImage: `url(https://img.youtube.com/vi/hkadAtcoK_o/0.jpg)` //${Background}
+      backgroundImage: `url(https://img.youtube.com/vi/rEMsjeq43_U/0.jpg)` //${Background}
     };
   };
 
@@ -14,18 +14,23 @@ class Category_item extends React.Component {
       <div>
         <a className="cardlink">
           <div className="cardwrapper">
-            <div className="cardimagediv" style={this.get_youtube_image()}>
-              <img
-                className="cardimage"
-                src="https://img.youtube.com/vi/FOODhMCWJsc/0.jpg"
-                alt="test"
-              />
+            <div className="card_image_wrapper">
+              <div className="cardimagediv" style={this.get_youtube_image()}>
+                <img
+                  className="cardimage"
+                  src="https://img.youtube.com/vi/FOODhMCWJsc/0.jpg"
+                  alt="test"
+                />
+              </div>
+              <div className="views">
+                {this.props.song.id}0231
+                <img src="../static/eye.png" alt="" className="view_image" />
+              </div>
             </div>
 
             <div className="carddata">
               <h5 className="title">{this.props.song.title}</h5>
-              <h6 className="author"> glasbena skupina {this.props.song.id}</h6>
-              <div className="views">{this.props.song.id} ogledov</div>
+              <h6 className="author">Skupina Objem{this.props.song.id}</h6>
             </div>
           </div>
         </a>

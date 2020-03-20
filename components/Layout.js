@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import "../scss/layout.scss";
+import "../scss/_layout.scss";
 
 const Layout = props => (
   <div>

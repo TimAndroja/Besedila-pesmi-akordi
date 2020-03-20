@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
-/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/layout.scss */ "./scss/layout.scss");
+/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/_layout.scss */ "./scss/_layout.scss");
 /* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_layout_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "C:\\Users\\AndrojaTim\\Documents\\Projects\\besedila_pesmi_akordi\\components\\Layout.js";
 
@@ -56,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _scss_navbar_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/navbar.scss */ "./scss/navbar.scss");
+/* harmony import */ var _scss_navbar_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/_navbar.scss */ "./scss/_navbar.scss");
 /* harmony import */ var _scss_navbar_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_navbar_scss__WEBPACK_IMPORTED_MODULE_6__);
 
 
@@ -177,7 +177,7 @@ var Navbar = /*#__PURE__*/function (_React$Component) {
           lineNumber: 26
         },
         __self: this
-      }), " ")), __jsx("div", {
+      }))), __jsx("div", {
         className: "right_menu",
         __source: {
           fileName: _jsxFileName,
@@ -243,8 +243,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../scss/All_categorys.scss */ "./scss/All_categorys.scss");
-/* harmony import */ var _scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_All_categorys_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _scss_all_categorys_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../scss/_all_categorys.scss */ "./scss/_all_categorys.scss");
+/* harmony import */ var _scss_all_categorys_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_all_categorys_scss__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -287,7 +287,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 9
         },
         __self: this
-      }, "slovenske pesmi")), __jsx("div", {
+      }, "Slovenske pesmi")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -300,7 +300,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 12
         },
         __self: this
-      }, " dalmatinske pesmi")), __jsx("div", {
+      }, " Dalmatinske pesmi")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -313,7 +313,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 15
         },
         __self: this
-      }, "angle\u0161ke pesmi")), __jsx("div", {
+      }, "Angle\u0161ke pesmi")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -326,7 +326,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 18
         },
         __self: this
-      }, "ljudske pesmi")), __jsx("div", {
+      }, "Ljudske pesmi")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -339,7 +339,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 21
         },
         __self: this
-      }, "slovenska popevka")), __jsx("div", {
+      }, "Slovenska popevka")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -352,7 +352,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 24
         },
         __self: this
-      }, "narodno zabavna glasba")), __jsx("div", {
+      }, "Narodno zabavna glasba")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -365,7 +365,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 27
         },
         __self: this
-      }, "otro\u0161ke pesmice")), __jsx("div", {
+      }, "Otro\u0161ke pesmice")), __jsx("div", {
         className: "kategorija",
         __source: {
           fileName: _jsxFileName,
@@ -378,7 +378,7 @@ var All_categorys = /*#__PURE__*/function (_Component) {
           lineNumber: 30
         },
         __self: this
-      }, "bo\u017Ei\u010Dne pesmi")));
+      }, "Bo\u017Ei\u010Dne pesmi")));
     }
   }]);
 
@@ -409,7 +409,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../scss/category_item.scss */ "./scss/category_item.scss");
+/* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../scss/_category_item.scss */ "./scss/_category_item.scss");
 /* harmony import */ var _scss_category_item_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scss_category_item_scss__WEBPACK_IMPORTED_MODULE_9__);
 
 
@@ -442,7 +442,7 @@ var Category_item = /*#__PURE__*/function (_React$Component) {
 
     Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "get_youtube_image", function () {
       return {
-        backgroundImage: "url(https://img.youtube.com/vi/hkadAtcoK_o/0.jpg)" //${Background}
+        backgroundImage: "url(https://img.youtube.com/vi/rEMsjeq43_U/0.jpg)" //${Background}
 
       };
     });
@@ -474,11 +474,18 @@ var Category_item = /*#__PURE__*/function (_React$Component) {
         },
         __self: this
       }, __jsx("div", {
+        className: "card_image_wrapper",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, __jsx("div", {
         className: "cardimagediv",
         style: this.get_youtube_image(),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         },
         __self: this
       }, __jsx("img", {
@@ -487,38 +494,47 @@ var Category_item = /*#__PURE__*/function (_React$Component) {
         alt: "test",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 19
         },
         __self: this
       })), __jsx("div", {
-        className: "carddata",
+        className: "views",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
+        },
+        __self: this
+      }, this.props.song.id, "0231", __jsx("img", {
+        src: "../static/eye.png",
+        alt: "",
+        className: "view_image",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }))), __jsx("div", {
+        className: "carddata",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
         },
         __self: this
       }, __jsx("h5", {
         className: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 32
         },
         __self: this
       }, this.props.song.title), __jsx("h6", {
         className: "author",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 33
         },
         __self: this
-      }, " glasbena skupina ", this.props.song.id), __jsx("div", {
-        className: "views",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
-      }, this.props.song.id, " ogledov")))));
+      }, "Skupina Objem", this.props.song.id)))));
     }
   }]);
 
@@ -548,7 +564,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _Category_item__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Category_item */ "./components/index/Category_item.js");
-/* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../scss/category_items.scss */ "./scss/category_items.scss");
+/* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../scss/_category_items.scss */ "./scss/_category_items.scss");
 /* harmony import */ var _scss_category_items_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scss_category_items_scss__WEBPACK_IMPORTED_MODULE_8__);
 
 
@@ -613,8 +629,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../scss/Index_content.scss */ "./scss/Index_content.scss");
-/* harmony import */ var _scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scss_Index_content_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _scss_index_content_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../scss/_index_content.scss */ "./scss/_index_content.scss");
+/* harmony import */ var _scss_index_content_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scss_index_content_scss__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _All_categorys__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./All_categorys */ "./components/index/All_categorys.js");
 /* harmony import */ var _Index_description1__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Index_description1 */ "./components/index/Index_description1.js");
 /* harmony import */ var _Category_items__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Category_items */ "./components/index/Category_items.js");
@@ -743,7 +759,7 @@ var Index_content = /*#__PURE__*/function (_Component) {
           lineNumber: 47
         },
         __self: this
-      }, " Trenutno popularno: "))), __jsx("div", {
+      }, " Trenutno popularna glasba: "))), __jsx("div", {
         className: "linebreak",
         __source: {
           fileName: _jsxFileName,
@@ -844,7 +860,7 @@ var Index_content = /*#__PURE__*/function (_Component) {
           lineNumber: 70
         },
         __self: this
-      }, "Dalmatinska glasba:"))), __jsx("div", {
+      }, "Dalmatinske pesmi:"))), __jsx("div", {
         className: "linebreak2",
         __source: {
           fileName: _jsxFileName,
@@ -945,7 +961,7 @@ var Index_content = /*#__PURE__*/function (_Component) {
           lineNumber: 94
         },
         __self: this
-      }, "Slovenska glsaba:"))), __jsx("div", {
+      }, "Slovenske pesmi:"))), __jsx("div", {
         className: "linebreak",
         __source: {
           fileName: _jsxFileName,
@@ -993,7 +1009,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../scss/index_description1.scss */ "./scss/index_description1.scss");
+/* harmony import */ var _scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../scss/_index_description1.scss */ "./scss/_index_description1.scss");
 /* harmony import */ var _scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_index_description1_scss__WEBPACK_IMPORTED_MODULE_6__);
 
 
@@ -1030,7 +1046,7 @@ var Index_description1 = /*#__PURE__*/function (_Component) {
           lineNumber: 8
         },
         __self: this
-      }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem perspiciatis laborum perferendis sint doloribus omnis tenetur quae ullam magnam eius, ratione tempora libero iste non. Fuga magnam animi illo. Dolorum repellat fugit nostrum quasi reiciendis vel corporis voluptate minima explicabo et, eveniet reprehenderit, quos eligendi voluptates ipsam nobis doloribus ex dolorem officiis unde iste. Mollitia alias illo cupiditate dicta. Blanditiis aspernatur amet sed"));
+      }, "PESMI GLASBA BESEDILA AKORDI za kitaro aktualnih ansamblov, bandov, glasbenikov, pevcev. Za vas smo izdelali glasbeni portal tako, da na njem isto\u010Dasno gledate videospot ter spremljate besedilo, akorde in tablaturo va\u0161e prilubljene skladbe. Vljudno vas vabimo, da tudi vi objavite svoje priljubjene pesmi z akordi in besedilom ter povezavo do ustreznega videa."));
     }
   }]);
 
@@ -7610,7 +7626,7 @@ var Index = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CAndrojaTim%5CDocuments%5CProjects%5Cbesedila_pesmi_akordi%5Cpages%5Cindex.js ***!
   \************************************************************************************************************************************************************/
@@ -7633,5 +7649,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

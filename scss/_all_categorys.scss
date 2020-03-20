@@ -1,0 +1,27 @@
+@import "scss/style.scss";
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
+.kategorije {
+  margin-top: $default_margin;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Baloo 2", cursive;
+
+  .kategorija {
+    text-align: center;
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      font-weight: bolder;
+      line-height: 1;
+      transition: $link_transition_time ease-in-out;
+    }
+    h2:hover {
+      color: map-get($colors, kategorija_hover);
+      cursor: pointer;
+      transition: $link_transition_time ease-in-out;
+    }
+
+    background-color: rgba(0, 0, 0, 0);
+    color: map-get($colors, kategorija);
+  }
+}
