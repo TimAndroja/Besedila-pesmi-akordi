@@ -11,12 +11,15 @@ $colors: (
   kategorija: #ff6633,
   nav_right: rgb(44, 62, 80),
   kategorija_hover: rgb(78, 88, 96),
-  search_background: white
+  search_background: white,
+  opis1: #f1f5fc8e,
+  submit_button: rgb(44, 62, 80),
+  submit_button_hover: rgba(44, 62, 80, 0.883)
 );
 
 //RESPONSIVE
 $tablet: 1700px;
-$mobile: 800px;
+$mobile: 840px;
 
 @mixin tablet {
   @media (max-width: #{$tablet}) {

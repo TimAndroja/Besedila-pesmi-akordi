@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../scss/_index_content.scss";
-import All_categorys from "./All_categorys";
+import All_categories from "./All_categories";
 import Index_description1 from "./Index_description_1";
 import Category_items from "./Category_items";
 import axios from "axios";
@@ -59,7 +59,7 @@ class Index_content extends Component {
   render() {
     return (
       <div className="default_margin">
-        <All_categorys />
+        <All_categories />
 
         <div>
           <div className="category_name">

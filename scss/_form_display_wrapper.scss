@@ -1,0 +1,15 @@
+@import "./style.scss";
+
+.split_form_display {
+  margin-top: $default_margin;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_wrapper {
+  flex: 0.95;
+  min-width: 400px;
+}
+
+.display_wrapper {
+}

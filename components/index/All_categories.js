@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../scss/_all_categorys.scss";
+import "../../scss/_all_categories.scss";
 
 class All_categorys extends Component {
   render() {
