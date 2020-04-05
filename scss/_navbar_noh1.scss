@@ -1,0 +1,135 @@
+@import "./style.scss";
+
+$navbar_height: 80px;
+
+.nav {
+  padding: 4px $margin_side 0px $margin_side;
+  display: grid;
+  grid-template-columns: 10fr 9fr 10fr;
+  grid-column-gap: 0px;
+  height: $navbar_height;
+  background-color: map-get($colors, navbar_background);
+  width: 100%;
+  font-size: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+  color: rgb(44, 62, 80);
+
+  @include mobile {
+    grid-template-columns: 0fr 1fr 0fr;
+  }
+
+  .h1 {
+    font-size: 25px;
+    line-height: 0.9;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.9;
+  }
+  .besedilapesmi {
+    margin-top: 10px;
+  }
+  .akordichords {
+    display: flex;
+  }
+  .chords {
+    margin-top: 4px;
+    margin-left: 2px;
+  }
+}
+
+.logo {
+  background-image: url("/static/notes.png");
+  background-repeat: no-repeat;
+  background-position-x: 167px;
+  background-position-y: 33px;
+  background-size: 92px;
+
+  @include mobile {
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+.searchbar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10fr 1fr;
+  height: 46px;
+  margin-top: 11px;
+  line-height: 1;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(128, 128, 128, 0.76);
+  border-radius: 3px;
+  background-color: map-get($colors, search_background);
+  color: rgba(44, 42, 42, 0.9);
+  font-size: 24px;
+  align-content: center;
+
+  input {
+    width: 100%; /* force to expand to container's width */
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+
+    padding: 0px 8px 4px 8px;
+  }
+
+  input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .searchicon {
+    margin-top: 4px;
+    text-align: right;
+    margin-right: 10px;
+
+    img {
+      height: 22px;
+    }
+    img:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+}
+
+.right_menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+
+  .dodaj_pesem {
+  }
+  a {
+    text-decoration: none;
+    color: map-get($colors, nav_right);
+  }
+
+  @include mobile {
+    width: 0;
+    visibility: hidden;
+  }
+}
