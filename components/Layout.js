@@ -1,8 +1,8 @@
 import Navbar from "./Navbar";
-import "../scss/_layout.scss";
+import styles from "../scss/_layout.module.scss";
 import Footer from "./Footer";
 
-const Layout = props => (
+const Layout = (props) => (
   <div>
     <Navbar />
     {props.children}

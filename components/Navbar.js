@@ -1,36 +1,36 @@
 import React, { Component } from "react";
-import "../scss/_navbar.scss";
+import styles from "../scss/_navbar.module.scss";
 
 class Navbar extends React.Component {
   render() {
     return (
       <div>
-        <nav className="nav">
-          <div className="logo">
-            <div className="besedilapesmi">
+        <nav className={styles.nav}>
+          <div className={styles.logo}>
+            <div className={styles.besedilapesmi}>
               <h1>Besedila Pesmi Akordi</h1>
             </div>
-            <div className="akordichords">
-              <div className="akordi"></div>
-              <div className="chords">
+            <div className={styles.akordichords}>
+              <div className={styles.akordi}></div>
+              <div className={styles.chords}>
                 <h2>Chords Lyrics Text</h2>
               </div>
             </div>
           </div>
 
-          <div className="searchbar">
-            <div className="inputdiv">
+          <div className={styles.searchbar}>
+            <div className={styles.inputdiv}>
               <input type="text" placeholder="Brskaj skladbe, avtorje" />
             </div>
-            <div className="searchicon">
+            <div className={styles.searchicon}>
               <img src="../static/search_icon.png" alt="Išči" />
             </div>
           </div>
 
-          <div className="right_menu">
+          <div className={styles.right_menu}>
             <div></div>
             <div></div>
-            <div className="dodaj_pesem">
+            <div className={styles.dodaj_pesem}>
               <a href="">
                 Dodaj svoje <br /> Besedilo/Akorde
               </a>

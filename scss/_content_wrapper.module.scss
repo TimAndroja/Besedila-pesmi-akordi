@@ -1,0 +1,9 @@
+@import "./style.scss";
+.default_margin {
+  margin: 0 $margin_side 0 $margin_side;
+}
+
+.split_sides {
+  margin-top: $default_margin;
+  display: flex;
+}

@@ -1,34 +1,34 @@
 import React, { Component } from "react";
-import "../../scss/_content_left_side.scss";
+import styles from "../../scss/_content_left_side.module.scss";
 
 class Content_left_side extends Component {
   state = {
     title: "Naslov",
     author: "Avtor",
     text_content: ["text"],
-    pdf_file: ""
+    pdf_file: "",
   };
   render() {
     return (
       <div>
-        <div className="display_content">
-          <img className="image_a4" src="../static/a4.png" alt="test" />
-          <div className="content">
-            <div className="title">
+        <div className={styles.display_content}>
+          <img className={styles.image_a4} src="../static/a4.png" alt="test" />
+          <div className={styles.content}>
+            <div className={styles.title}>
               <h2>{this.state.title}</h2>
             </div>
-            <div className="author">
+            <div className={styles.author}>
               <h2>{this.state.author}</h2>
             </div>
-            <div className="text_content">
+            <div className={styles.text_content}>
               <ul className={this.state.pdf_file ? "hidden" : "noclass"}>
                 {this.state.text_content.map((text_line, index) =>
                   index % 2 === 0 ? (
-                    <li key={index} className="li_akord">
+                    <li key={index} className={styles.li_akord}>
                       {text_line}
                     </li>
                   ) : (
-                    <li key={index} className="li_text">
+                    <li key={index} className={styles.li_text}>
                       {text_line}
                     </li>
                   )
@@ -37,7 +37,7 @@ class Content_left_side extends Component {
             </div>
           </div>
           <div className={this.state.pdf_file ? "show" : "hidden"}>
-            <div className="file_name">
+            <div className={styles.file_name}>
               {
                 this.state.pdf_file.replace(/\\/g, "/").split("/")[
                   this.state.pdf_file.split("\\").length - 1

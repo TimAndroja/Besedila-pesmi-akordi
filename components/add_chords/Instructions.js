@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "../../scss/_instructions.scss";
+import styles from "../../scss/_instructions.module.scss";
 
 class Instructions extends Component {
   render() {
     return (
       <div>
         <h2>
-          <div className="opis1">
+          <div className={styles.opis1}>
             PESMI GLASBA BESEDILA AKORDI za kitaro aktualnih ansamblov, bandov,
             glasbenih skupin, glasbenikov in pevcev. Za vas smo izdelali
             glasbeni portal, na katerem lahko istočasno gledate videospot ter

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { Component } from "react";
 import Content_wrapper from "../components/besedila/Content_wrapper";
-import "../scss/style.scss";
+
 import Layout_noh1 from "../components/Layout_noh1";
 
 class Besedila extends React.Component {

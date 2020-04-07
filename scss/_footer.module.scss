@@ -1,0 +1,76 @@
+@import "./style.scss";
+.wrapper_footer {
+  margin-top: $default_margin;
+  border-top: 1px solid gray;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    color: map-get($colors, footer_default);
+  }
+  a:hover {
+    color: map-get($colors, footer_hover);
+  }
+}
+
+.margin_footer {
+  margin: 0 $margin_side 0 $margin_side;
+}
+
+.footer {
+  padding: 15px 0 15px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left_footer {
+  text-align: left;
+}
+
+.middle_footer {
+  color: rgb(44, 62, 80);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  .h1 {
+    font-size: 25px;
+    line-height: 0.9;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.9;
+  }
+  .besedilapesmi {
+    margin-top: 10px;
+  }
+
+  .chords {
+    margin-top: 4px;
+    margin-left: 2px;
+  }
+}
+
+.right_footer {
+  align-self: center;
+  justify-self: right;
+  font-weight: 500;
+}
+
+.title_footer {
+  color: rgb(44, 62, 80);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.created {
+  color: rgb(44, 62, 80);
+  margin-top: 5px;
+}

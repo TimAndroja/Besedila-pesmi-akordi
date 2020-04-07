@@ -1,0 +1,115 @@
+@import "./style.scss";
+.default_margin {
+  margin: 0 $margin_side 0 $margin_side;
+}
+
+.category_name {
+  font-size: 26px;
+  margin-top: 25px;
+  color: map-get($colors, category_color);
+  font-weight: bold;
+
+  h2 {
+    font-size: 26px;
+
+    @include mobile {
+      font-size: 5vw;
+    }
+  }
+
+  @include mobile {
+    margin-top: $default_margin_mobile;
+  }
+}
+
+.category_name2 {
+  font-size: 26px;
+  margin-top: $default_margin;
+  color: map-get($colors, category_color);
+  font-weight: bold;
+  @include mobile {
+    visibility: hidden;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.category_hover {
+  transition: $link_transition_time ease-in-out;
+}
+
+.category_hover:hover {
+  color: map-get($colors, category_color_hover);
+  cursor: pointer;
+  transition: $link_transition_time ease-in-out;
+}
+
+.linebreak {
+  margin-top: 4px;
+  border-bottom: 2px solid map-get($colors, linebreak);
+}
+
+.linebreak2 {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid map-get($colors, linebreak);
+  @include mobile {
+    visibility: hidden;
+  }
+}
+
+.split_categorys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+
+  @include mobile {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}
+@import "./style.scss";
+.to_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 25px;
+  grid-column-gap: 50px;
+  grid-row-gap: $default_margin;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+    margin-top: $default_margin_mobile;
+    grid-column-gap: $default_margin_mobile;
+    grid-row-gap: $default_margin_mobile;
+  }
+}
+
+.to_grid2 {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.to_grid3 {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
