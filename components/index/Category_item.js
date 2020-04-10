@@ -34,15 +34,6 @@ class Category_item extends React.Component {
                     className={styles.view_image}
                   />
                 </div>
-
-                <div className={styles.likes}>
-                  {this.props.song.id}31
-                  <img
-                    src="../static/upvote.png"
-                    alt=""
-                    className={styles.like_image}
-                  />
-                </div>
               </div>
             </div>
 

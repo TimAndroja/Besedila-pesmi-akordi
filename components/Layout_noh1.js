@@ -1,5 +1,3 @@
-import Navbar from "./Navbar";
-import styles from "../scss/_layout.module.scss";
 import Navbar_noh1 from "./Navbar_noh1";
 import Footer from "./Footer";
 

@@ -11,6 +11,10 @@
   a:hover {
     color: map-get($colors, footer_hover);
   }
+
+  @include mobile {
+    visibility: hidden;
+  }
 }
 
 .margin_footer {

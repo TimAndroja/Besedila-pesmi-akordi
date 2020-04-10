@@ -128,7 +128,7 @@ class Index_content extends Component {
             </div>
           </div>
         </div>
-
+        <div className={styles.index_reklama}></div>
         <div className={styles.split_categorys}>
           <div>
             <div className={styles.category_name2}>

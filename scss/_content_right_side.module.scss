@@ -7,6 +7,14 @@
   margin-top: 5px;
   width: 32vw;
   height: 18vw;
+  @include colide {
+    width: 80vw;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .video {
@@ -16,6 +24,9 @@
 
 .meta_title {
   line-height: 1;
+  @include colide {
+    margin-top: $default_margin;
+  }
 }
 .author_views {
   display: flex;
@@ -88,12 +99,16 @@
   .notes {
     width: 20px;
     color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .root {
     width: 20px;
     color: black;
     font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .transpose1 {
@@ -101,6 +116,7 @@
   }
   .transpose2 {
     width: 20px;
+    margin-top: 5px;
   }
 }
 
@@ -115,11 +131,18 @@
   width: 100%;
   height: 350px;
 
-  background-color: black;
+  background-color: gray;
 }
 
 .space_vert {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.iz {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
 }

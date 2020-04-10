@@ -44,13 +44,13 @@ class Content_left_side extends Component {
                 ]
               }
             </div>
-            {/*                <embed
+            {/*                 <embed
                   src={this.state.pdf_file + "#view=FitH"
                   width="100%"
                   height="100%"
                   type="application/pdf"
                   className={this.state.pdf_file ? "show" : "hidden"}
-                ></embed> */}
+                ></embed>  */}
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 @import "./style.scss";
+
 .split_form_display {
   margin-top: $default_margin;
   display: flex;
@@ -98,8 +99,8 @@
   }
 }
 
-.show {
-  visibility: visible;
+.pdf_file {
+  visibility: hidden;
   background-color: rgba(0, 0, 0, 0.123);
   position: absolute;
   width: 100%;
@@ -113,9 +114,6 @@
     font-weight: 600;
     transform: translate(-50%, -50%);
   }
-}
-.hidden {
-  visibility: hidden;
 }
 
 .content {

@@ -45,7 +45,7 @@ class Content_right_side extends Component {
     return (
       <div className={styles.right_side_display}>
         <div className={styles.go_middle}>
-          <div class="space_vert">
+          <div class={styles.space_vert}>
             <div>
               <div className={styles.meta_title}>
                 <h1>Zvončki in trobentice</h1>
@@ -62,7 +62,6 @@ class Content_right_side extends Component {
                   src="//www.youtube.com/embed/yCOY82UdFrw"
                   frameborder="0"
                   allowfullscreen
-                  width="60%"
                   class="video"
                 ></iframe>
               </div>
@@ -71,6 +70,7 @@ class Content_right_side extends Component {
               <div className={styles.wrapper_transpose}>
                 <div className={styles.wrapper_select}>
                   <div className={styles.select1}>
+                    <div className={styles.iz}> IZ:</div>
                     <button onClick={this.b1m}>-</button>
                     <div className={styles.root_select}>
                       {this.state.tones[this.state.select1]}
@@ -79,6 +79,7 @@ class Content_right_side extends Component {
                   </div>
                   <div className={styles.transpose_title}>Transponator</div>
                   <div className={styles.select2}>
+                    <div className={styles.iz}> V:</div>
                     <button onClick={this.b2m}>-</button>
                     <div className={styles.root_select}>
                       {this.state.tones[this.state.select2]}
@@ -87,6 +88,10 @@ class Content_right_side extends Component {
                   </div>
                 </div>
                 <div className={styles.t_wrapper}>
+                  <div className={styles.root}>
+                    <div className={styles.transpose1}>IZ:</div>
+                    <div className={styles.transpose2}>V&nbsp;:</div>
+                  </div>
                   <div className={styles.root}>
                     <div className={styles.transpose1}>
                       {this.transpose1(0)}

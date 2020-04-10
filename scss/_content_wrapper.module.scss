@@ -6,4 +6,8 @@
 .split_sides {
   margin-top: $default_margin;
   display: flex;
+  @include colide {
+    display: grid;
+    justify-content: center;
+  }
 }

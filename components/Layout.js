@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import styles from "../scss/_layout.module.scss";
 import Footer from "./Footer";
 
 const Layout = (props) => (

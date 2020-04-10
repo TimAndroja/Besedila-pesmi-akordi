@@ -17,11 +17,15 @@ $colors: (
   text_chord: #ff6633,
   footer_default: rgb(44, 62, 80),
   footer_hover: rgba(82, 111, 139, 0.788),
+  kategorija_hover: rgb(44, 62, 80),
 );
 
-//RESPONSIVE
+//RESPONSIVE INDEX
 $tablet: 1700px;
-$mobile: 840px;
+$mobile: 880px;
+
+//RESPONSIVE CONTENT
+$colide: 1200px;
 
 @mixin tablet {
   @media (max-width: #{$tablet}) {
@@ -31,6 +35,12 @@ $mobile: 840px;
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin colide {
+  @media (max-width: #{$colide}),(orientation: portrait ) {
     @content;
   }
 }
