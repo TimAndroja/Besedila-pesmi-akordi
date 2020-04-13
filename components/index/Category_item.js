@@ -15,39 +15,52 @@ class Category_item extends React.Component {
 
   render() {
     return (
-      <div>
-        <a className={styles.cardlink}>
-          <div className={styles.cardwrapper}>
-            <div className={styles.card_image_wrapper}>
-              <div
-                className={styles.cardimagediv}
-                style={this.get_youtube_image(this.props.song.youtube)}
-              >
-                <img
-                  className={styles.cardimage}
-                  src="https://img.youtube.com/vi/FOODhMCWJsc/0.jpg"
-                  alt="test"
-                />
-              </div>
-              <div className={styles.stats}>
-                <div className={styles.views}>
-                  {this.props.song.views}
+      <Link
+        href="/besedila/[id]"
+        as={`/besedila/${
+          this.props.song.title
+            .toLowerCase()
+            .replace(/\s/g, "-")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "") +
+          "-" +
+          this.props.song.id_song
+        }`}
+      >
+        <div>
+          <a className={styles.cardlink}>
+            <div className={styles.cardwrapper}>
+              <div className={styles.card_image_wrapper}>
+                <div
+                  className={styles.cardimagediv}
+                  style={this.get_youtube_image(this.props.song.youtube)}
+                >
                   <img
-                    src="../static/eye.png"
-                    alt=""
-                    className={styles.view_image}
+                    className={styles.cardimage}
+                    src="https://img.youtube.com/vi/FOODhMCWJsc/0.jpg"
+                    alt="test"
                   />
                 </div>
+                <div className={styles.stats}>
+                  <div className={styles.views}>
+                    {this.props.song.views}
+                    <img
+                      src="../static/eye.png"
+                      alt=""
+                      className={styles.view_image}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.carddata}>
+                <h5 className={styles.title}>{this.props.song.title}</h5>
+                <h6 className={styles.author}>{this.props.song.author}</h6>
               </div>
             </div>
-
-            <div className={styles.carddata}>
-              <h5 className={styles.title}>{this.props.song.title}</h5>
-              <h6 className={styles.author}>{this.props.song.author}</h6>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
+      </Link>
     );
   }
 }

@@ -20,7 +20,6 @@ class Navbar_noh1 extends React.Component {
               </div>
             </div>
           </Link>
-          )
           <div className={styles.searchbar}>
             <div className={styles.inputdiv}>
               <input type="text" placeholder="Brskaj skladbe, avtorje" />

@@ -88,7 +88,7 @@ class Index_content extends Component {
             </div>
             <div className={styles.linebreak2}></div>
             <div className={styles.to_grid2}>
-              <Category_items songs={this.state.songs_slovenske} />
+              <Category_items songs={this.state.songs_narodno_zabavne} />
             </div>
           </div>
           <div>
@@ -124,7 +124,7 @@ class Index_content extends Component {
             </div>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
-              <Category_items songs={this.state.songs_narodno_zabavne} />
+              <Category_items songs={this.state.songs_slovenske} />
             </div>
           </div>
         </div>

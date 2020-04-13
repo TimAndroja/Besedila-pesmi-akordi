@@ -45,7 +45,7 @@ class Content_right_side extends Component {
     return (
       <div className={styles.right_side_display}>
         <div className={styles.go_middle}>
-          <div class={styles.space_vert}>
+          <div className={styles.space_vert}>
             <div>
               <div className={styles.meta_title}>
                 <h1>Zvončki in trobentice</h1>
@@ -60,9 +60,9 @@ class Content_right_side extends Component {
               <div className={styles.youtube_video}>
                 <iframe
                   src="//www.youtube.com/embed/yCOY82UdFrw"
-                  frameborder="0"
-                  allowfullscreen
-                  class="video"
+                  frameBorder="0"
+                  allowFullScreen="1"
+                  className="video"
                 ></iframe>
               </div>
             </div>
