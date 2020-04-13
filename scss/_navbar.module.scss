@@ -47,6 +47,7 @@ $navbar_height: 80px;
   background-position-x: 167px;
   background-position-y: 33px;
   background-size: 92px;
+  cursor: pointer;
 
   @include mobile {
     width: 0;

@@ -20,39 +20,39 @@ class Index_content extends Component {
 
   componentDidMount() {
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=6")
+      .get("http://localhost:3002/api/songs/popularna")
       .then((res) => this.setState({ songs_popularno: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/slovenska")
       .then((res) => this.setState({ songs_slovenske: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/dalmatinska")
       .then((res) => this.setState({ songs_dalmatinske: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/tuja")
       .then((res) => this.setState({ songs_tuje: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/narodna")
       .then((res) => this.setState({ songs_narodno_zabavne: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/otroska")
       .then((res) => this.setState({ songs_otroske: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/ljudska")
       .then((res) => this.setState({ songs_ljudske: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/popevka")
       .then((res) => this.setState({ songs_slovenska_popevka: res.data }));
 
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
+      .get("http://localhost:3002/api/songs/ostala")
       .then((res) => this.setState({ songs_ostalo: res.data }));
   }
 

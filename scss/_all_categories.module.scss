@@ -16,14 +16,14 @@
   .kategorija {
     text-align: center;
     h2 {
-      font-size: 22px;
+      font-size: 1.2vw;
       font-weight: 500;
       font-weight: bolder;
       line-height: 1;
       transition: $link_transition_time ease-in-out;
 
       @include tablet {
-        font-size: 18px;
+        font-size: 1.8vw;
         margin-left: 10px;
         margin-right: 10px;
       }
