@@ -7,6 +7,8 @@ class Content_right_side extends Component {
     select1: 0,
     select2: 7,
   };
+
+  //TRANSPOSE FUNCTIONS
   transpose1(index) {
     return this.state.tones[(this.state.select1 + index) % 12];
   }
@@ -48,18 +50,20 @@ class Content_right_side extends Component {
           <div className={styles.space_vert}>
             <div>
               <div className={styles.meta_title}>
-                <h1>Zvončki in trobentice</h1>
+                <h1>{this.props.song.title}</h1>
               </div>
               <div className={styles.author_views}>
                 <div className={styles.meta_author}>
-                  <h2>Ansambel Objem</h2>
+                  <h2>{this.props.song.author}</h2>
                 </div>
-                <div className={styles.meta_views}>123 ogledov</div>
+                <div className={styles.meta_views}>
+                  {this.props.song.views} ogledov
+                </div>
               </div>
 
               <div className={styles.youtube_video}>
                 <iframe
-                  src="//www.youtube.com/embed/yCOY82UdFrw"
+                  src={this.props.song.youtube.replace("watch?v=", "embed/")}
                   frameBorder="0"
                   allowFullScreen="1"
                   className="video"

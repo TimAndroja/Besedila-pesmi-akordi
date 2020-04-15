@@ -7,10 +7,11 @@ class Content_wrapper extends Component {
   render() {
     return (
       <div className={styles.default_margin}>
+        {/* <h1>{this.props.song.title}</h1> */}
         <div className={styles.split_sides}>
-          <Content_left_side />
+          <Content_left_side song={this.props.song} />
 
-          <Content_right_side />
+          <Content_right_side song={this.props.song} />
         </div>
       </div>
     );
