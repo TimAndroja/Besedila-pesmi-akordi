@@ -1,5 +1,7 @@
 @import "./style.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,500&display=swap");
+
 .split_form_display {
   margin-top: $default_margin;
   display: flex;
@@ -9,9 +11,6 @@
 .form_wrapper {
   flex: 0.95;
   min-width: 300px;
-}
-
-.display_wrapper {
 }
 
 .text_input {
@@ -79,9 +78,6 @@
   color: black;
 }
 
-.naslov_form {
-}
-
 .form {
   padding: 6px 15px 15px 15px;
   background-color: map-get($colors, opis1);
@@ -93,7 +89,7 @@
   border: 1px solid black;
 
   img {
-    width: 70vh;
+    width: 40vw;
 
     visibility: hidden;
   }
@@ -117,6 +113,7 @@
 }
 
 .content {
+  font-family: "Roboto Mono", monospace;
   .title {
     position: absolute;
     top: 3%;
@@ -132,12 +129,12 @@
 
   .author {
     position: absolute;
-    top: 7%;
+    top: 5.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     h2 {
       padding-top: 0vw;
-      font-size: 0.9vw;
+      font-size: 0.8vw;
       line-height: 1;
       white-space: pre;
     }
@@ -149,12 +146,13 @@
 
     transform: translate(-0%, -20%);
     ul {
+      line-height: 1.5;
       list-style-type: none;
     }
     .li_akord {
-      font-size: 0.7vw;
+      font-size: 0.8vw;
       color: map-get($colors, text_chord);
-      font-weight: 700;
+      font-weight: 500;
       white-space: pre;
     }
 
@@ -164,4 +162,48 @@
       font-weight: 500;
     }
   }
+}
+
+//form font
+.font_size {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  .velikost_pisave {
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  .select1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .root_select {
+    text-align: center;
+
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    outline: none;
+  }
+  button:hover {
+    background-color: map-get($colors, card_author);
+    cursor: pointer;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
 }

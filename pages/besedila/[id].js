@@ -3,13 +3,10 @@ import { useRouter } from "next/router";
 
 import Content_wrapper from "../../components/besedila/Content_wrapper";
 import Layout_noh1 from "../../components/Layout_noh1";
-import axios from "axios";
+
 import fetch from "isomorphic-unfetch";
 
 const Besedila = (props) => (
-  /* const id_link = router.query.id;
-  const id = id.substring(id.lastIndexOf("-") + 1, id.length); */
-
   <Layout_noh1>
     <Content_wrapper song={props.song} />
   </Layout_noh1>

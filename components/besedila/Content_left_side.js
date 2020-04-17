@@ -6,21 +6,11 @@ function Content_left_side(props) {
   const [author, set_author] = useState(props.song.author);
   const [text_content, set_text_content] = useState(props.song.text_content);
   const [pdf_file_name, set_pdf_file_name] = useState(props.song.pdf_file_name);
+  const [font_size, set_font_size] = useState(props.song.font_size);
 
-  useEffect(() => {}, []);
-
-  return (
-    <div>
-      <div className={styles.display_content}>
-        <img className={styles.image_a4} src="../static/a4.png" alt="test" />
-        <div className={styles.content}>
-          <div className={styles.title}>
-            <h2>{title}</h2>
-          </div>
-          <div className={styles.author}>
-            <h2>{author}</h2>
-          </div>
-        </div>
+  const Show_content = () => {
+    if (pdf_file_name != null) {
+      return (
         <div className={styles.pdf}>
           <iframe
             src={
@@ -33,6 +23,43 @@ function Content_left_side(props) {
             type="application/pdf"
           ></iframe>
         </div>
+      );
+    }
+    const text_lines = text_content.split(/\r?\n/);
+    return (
+      <div className={styles.content}>
+        <div className={styles.title}>
+          <h2>{title}</h2>
+        </div>
+        <div className={styles.author}>
+          <h2>{author}</h2>
+        </div>
+        <div className={styles.text_content}>
+          <ul style={{ fontSize: font_size + "vw" }}>
+            {text_lines.map((text_line, index) =>
+              index % 2 === 0 ? (
+                <li key={index} className={styles.li_akord}>
+                  {text_line}
+                </li>
+              ) : (
+                <li key={index} className={styles.li_text}>
+                  {text_line}
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+      </div>
+    );
+  };
+  useEffect(() => {}, []);
+
+  return (
+    <div>
+      <div className={styles.display_content}>
+        <img className={styles.image_a4} src="../static/a4.png" alt="test" />
+
+        <Show_content />
       </div>
     </div>
   );

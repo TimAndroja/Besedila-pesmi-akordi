@@ -28,6 +28,7 @@
 }
 
 .content {
+  font-family: "Roboto Mono", monospace;
   .title {
     position: absolute;
     top: 3%;
@@ -67,23 +68,23 @@
     transform: translate(-0%, -20%);
     ul {
       list-style-type: none;
+      line-height: 1.5;
     }
     .li_akord {
-      font-size: 0.9vw;
-      color: map-get($colors, text_chord);
-      font-weight: 700;
       white-space: pre;
+      color: map-get($colors, text_chord);
+      font-weight: 500;
+
       @include colide {
-        font-size: 1.8vw;
+        font-size: 200%;
       }
     }
 
     .li_text {
-      font-size: 0.8vw;
       white-space: pre;
       font-weight: 500;
       @include colide {
-        font-size: 1.6vw;
+        font-size: 200%;
       }
     }
   }
