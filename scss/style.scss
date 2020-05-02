@@ -4,12 +4,12 @@ $colors: (
   card_author: rgb(128, 139, 150),
   card_viewcount: rgba(0, 0, 0, 0.4),
   card_title_hover: #ff6633,
-  category_color: rgb(44, 62, 80),
+  category_color: #2c3e50,
   category_color_hover: #ff6633,
   linebreak: rgba(0, 0, 0, 0.411),
   kategorija: #ff6633,
   nav_right: rgb(44, 62, 80),
-  search_background: white,
+  search_background: #f5f7fa65,
   opis1: #f1f5fc8e,
   submit_button: rgb(44, 62, 80),
   submit_button_hover: rgba(44, 62, 80, 0.883),
@@ -18,6 +18,9 @@ $colors: (
   footer_default: rgb(44, 62, 80),
   footer_hover: rgba(82, 111, 139, 0.788),
   kategorija_hover: rgb(44, 62, 80),
+  content_title: #ff6633,
+  content_author: #080608,
+  content_views: #080608,
 );
 
 //RESPONSIVE INDEX

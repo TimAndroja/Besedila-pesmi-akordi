@@ -24,12 +24,17 @@
 
 .meta_title {
   line-height: 1;
+  color: map-get($colors, content_title);
+  h1 {
+    font-weight: 500;
+  }
   @include colide {
     margin-top: $default_margin;
   }
 }
 .author_views {
   display: flex;
+  color: map-get($colors, content_author);
   justify-content: space-between;
   margin-top: 4px;
 }
@@ -42,6 +47,7 @@
 }
 
 .meta_views {
+  color: map-get($colors, content_views);
   padding-top: 5px;
 }
 
@@ -66,13 +72,14 @@
     text-align: center;
     font-size: 17px;
     font-weight: 500;
+    color: #ff6633;
   }
   button {
     width: 25px;
     height: 25px;
     border: none;
     border-radius: 3px;
-    border: 1px solid gray;
+    border: 1px solid #8f959e;
     font-size: 18px;
     font-weight: 500;
     background-color: transparent;
@@ -86,6 +93,7 @@
   .transpose_title {
     font-weight: 500;
     font-size: 18px;
+    color: #080608;
   }
 }
 .t_wrapper {
@@ -94,21 +102,28 @@
   justify-content: space-around;
   font-weight: 500;
   font-size: 18px;
-  background-color: gray;
+  background-color: #f5f7fa;
 
   .notes {
     width: 20px;
-    color: white;
+    color: #080608;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
   .root {
     width: 20px;
-    color: black;
+    color: #ff6633;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .arrow {
+    width: 20px;
+    color: #080608;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
   }
 
   .transpose1 {
@@ -122,7 +137,7 @@
 
 .wrapper_transpose {
   margin-top: $default_margin;
-  border: 1px solid gray;
+  border: 1px solid #8f959e;
 
   border-radius: 3px;
 }
@@ -131,7 +146,7 @@
   width: 100%;
   height: 350px;
 
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.205);
 }
 
 .space_vert {

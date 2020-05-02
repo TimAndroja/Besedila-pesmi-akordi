@@ -11,7 +11,7 @@ $navbar_height: 80px;
   background-color: map-get($colors, navbar_background);
   width: 100%;
   font-size: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.048);
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055);
   color: rgb(44, 62, 80);
@@ -48,6 +48,7 @@ $navbar_height: 80px;
   background-position-y: 33px;
   background-size: 92px;
   cursor: pointer;
+  width: 270px;
 
   @include mobile {
     width: 0;
@@ -62,7 +63,7 @@ $navbar_height: 80px;
   height: 46px;
   margin-top: 11px;
   line-height: 1;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
   border: 1px solid rgba(128, 128, 128, 0.76);

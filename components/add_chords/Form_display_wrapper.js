@@ -139,12 +139,12 @@ class Form_display_wrapper extends Component {
             <form onSubmit={this.post_song}>
               <div className={styles.text_input}>
                 <div>
-                  <label>Naslov: </label>
+                  <label>Naslov pesmi(*): </label>
                 </div>
                 <input
                   type="text"
                   className={styles.text}
-                  placeholder="Naslov pesmi (*)"
+                  placeholder="Naslov pesmi"
                   name="title"
                   value={this.state.title}
                   onChange={this.onChange}
@@ -167,7 +167,7 @@ class Form_display_wrapper extends Component {
               </div>
               <div className={styles.text_input}>
                 <div>
-                  <label>Youtube povezava: </label>
+                  <label>Youtube povezava(*): </label>
                 </div>
 
                 <input
@@ -176,7 +176,7 @@ class Form_display_wrapper extends Component {
                   name="youtube"
                   value={this.state.youtube}
                   onChange={this.onChange}
-                  placeholder="youtube link (*)"
+                  placeholder="youtube link"
                   required="1"
                 />
               </div>
@@ -192,7 +192,7 @@ class Form_display_wrapper extends Component {
                   <div className={styles.font_size}>
                     <div className={styles.select1}>
                       <div className={styles.velikost_pisave}>
-                        Zamik besedila v desno:
+                        Zamik besedila proti sredini:
                       </div>
                       <button onClick={this.b2m}>-</button>
                       <div className={styles.root_select}>

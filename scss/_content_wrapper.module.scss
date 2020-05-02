@@ -11,3 +11,17 @@
     justify-content: center;
   }
 }
+
+.recommendations {
+  display: grid;
+  margin-top: $default_margin;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: $default_margin;
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include mobile {
+    visibility: hidden;
+  }
+}

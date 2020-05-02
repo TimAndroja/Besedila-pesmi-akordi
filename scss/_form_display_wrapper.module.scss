@@ -191,11 +191,13 @@
     height: 25px;
     border: none;
     border-radius: 3px;
-    border: 1px solid gray;
+    border: 2px solid rgba(0, 0, 0, 0.527);
     font-size: 18px;
     font-weight: 500;
     background-color: transparent;
     outline: none;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.788);
   }
   button:hover {
     background-color: map-get($colors, card_author);
@@ -204,6 +206,8 @@
 }
 
 .options {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
 }

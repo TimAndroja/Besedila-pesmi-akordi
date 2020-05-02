@@ -92,14 +92,16 @@ class Content_right_side extends Component {
                   </div>
                 </div>
                 <div className={styles.t_wrapper}>
-                  <div className={styles.root}>
+                  <div className={styles.notes}>
                     <div className={styles.transpose1}>IZ:</div>
+                    <div className={styles.arrow}>&nbsp; </div>
                     <div className={styles.transpose2}>V&nbsp;:</div>
                   </div>
                   <div className={styles.root}>
                     <div className={styles.transpose1}>
                       {this.transpose1(0)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(0)}
                     </div>
@@ -108,6 +110,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(1)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(1)}
                     </div>
@@ -116,6 +119,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(2)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(2)}
                     </div>
@@ -124,6 +128,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(3)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(3)}
                     </div>
@@ -132,6 +137,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(4)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(4)}
                     </div>
@@ -140,6 +146,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(5)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(5)}
                     </div>
@@ -148,6 +155,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(6)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(6)}
                     </div>
@@ -156,6 +164,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(7)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(7)}
                     </div>
@@ -164,6 +173,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(8)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(8)}
                     </div>
@@ -172,6 +182,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(9)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(9)}
                     </div>
@@ -180,6 +191,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(10)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(10)}
                     </div>
@@ -188,6 +200,7 @@ class Content_right_side extends Component {
                     <div className={styles.transpose1}>
                       {this.transpose1(11)}
                     </div>
+                    <div className={styles.arrow}>▼</div>
                     <div className={styles.transpose2}>
                       {this.transpose2(11)}
                     </div>

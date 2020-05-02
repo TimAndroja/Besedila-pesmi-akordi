@@ -1,0 +1,27 @@
+@import "./style.scss";
+
+.default_margin {
+  margin-left: $margin_side;
+  margin-right: $margin_side;
+}
+
+.search_results {
+  display: grid;
+  margin-top: $default_margin;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include mobile {
+    visibility: hidden;
+  }
+}
+
+.searched_for {
+  margin-top: 30px;
+  span {
+    color: map-get($colors, kategorija);
+  }
+}

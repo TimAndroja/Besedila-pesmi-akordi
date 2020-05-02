@@ -3,6 +3,7 @@ import styles from "../../scss/_index_content.module.scss";
 import All_categories from "./All_categories";
 import Index_description1 from "./Index_description_1";
 import Category_items from "./Category_items";
+import Link from "next/link";
 import axios from "axios";
 
 class Index_content extends Component {
@@ -62,15 +63,15 @@ class Index_content extends Component {
         <All_categories />
 
         <div>
-          <div className={styles.category_name}>
-            <h2>
-              <a className={styles.category_hover}>
-                {" "}
-                Trenutno popularna glasba:{" "}
-              </a>
-            </h2>
-          </div>
-
+          <Link
+            href={{ pathname: "/brskaj", query: { kategorija: "popularna" } }}
+          >
+            <div className={styles.category_name}>
+              <h2>
+                <a className={styles.category_hover}>Popularna glasba:</a>
+              </h2>
+            </div>
+          </Link>
           <div className={styles.linebreak}></div>
           <div className={styles.to_grid}>
             <Category_items songs={this.state.songs_popularno} />
@@ -79,24 +80,35 @@ class Index_content extends Component {
         <Index_description1 />
         <div className={styles.split_categorys}>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>
-                  Narodno Zabavna Glasba:{" "}
-                </a>{" "}
-              </h2>
-            </div>
+            <Link
+              href={{ pathname: "/brskaj", query: { kategorija: "narodna" } }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>
+                    Narodno Zabavna Glasba:
+                  </a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak2}></div>
             <div className={styles.to_grid2}>
               <Category_items songs={this.state.songs_narodno_zabavne} />
             </div>
           </div>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Dalmatinske pesmi:</a>
-              </h2>
-            </div>
+            <Link
+              href={{
+                pathname: "/brskaj",
+                query: { kategorija: "dalmatinska" },
+              }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Dalmatinske pesmi:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak2}></div>
             <div className={styles.to_grid3}>
               <Category_items songs={this.state.songs_dalmatinske} />
@@ -106,22 +118,28 @@ class Index_content extends Component {
 
         <div className={styles.split_categorys}>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Tuja glasba:</a>
-              </h2>
-            </div>
+            <Link href={{ pathname: "/brskaj", query: { kategorija: "tuja" } }}>
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Tuja glasba:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
               <Category_items songs={this.state.songs_tuje} />
             </div>
           </div>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Slovenske pesmi:</a>
-              </h2>
-            </div>
+            <Link
+              href={{ pathname: "/brskaj", query: { kategorija: "slovenska" } }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Slovenske pesmi:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
               <Category_items songs={this.state.songs_slovenske} />
@@ -131,22 +149,30 @@ class Index_content extends Component {
         <div className={styles.index_reklama}></div>
         <div className={styles.split_categorys}>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Otroške pesmice:</a>
-              </h2>
-            </div>
+            <Link
+              href={{ pathname: "/brskaj", query: { kategorija: "otroska" } }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Otroške pesmice:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
               <Category_items songs={this.state.songs_otroske} />
             </div>
           </div>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Ljudske pesmi:</a>
-              </h2>
-            </div>
+            <Link
+              href={{ pathname: "/brskaj", query: { kategorija: "ljudska" } }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Ljudske pesmi:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
               <Category_items songs={this.state.songs_ljudske} />
@@ -155,22 +181,30 @@ class Index_content extends Component {
         </div>
         <div className={styles.split_categorys}>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Slovenska popevka:</a>
-              </h2>
-            </div>
+            <Link
+              href={{ pathname: "/brskaj", query: { kategorija: "popevka" } }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Slovenska popevka:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
               <Category_items songs={this.state.songs_slovenska_popevka} />
             </div>
           </div>
           <div>
-            <div className={styles.category_name2}>
-              <h2>
-                <a className={styles.category_hover}>Ostala glasba:</a>
-              </h2>
-            </div>
+            <Link
+              href={{ pathname: "/brskaj", query: { kategorija: "ostala" } }}
+            >
+              <div className={styles.category_name2}>
+                <h2>
+                  <a className={styles.category_hover}>Ostala glasba:</a>
+                </h2>
+              </div>
+            </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
               <Category_items songs={this.state.songs_ostalo} />

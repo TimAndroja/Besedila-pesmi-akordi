@@ -5,9 +5,13 @@ import styles from "../../scss/_category_items.module.scss";
 
 class Category_items extends React.Component {
   render() {
-    return this.props.songs.map((song) => (
-      <Category_item song={song} key={song.id_song} />
-    ));
+    return this.props.songs ? (
+      this.props.songs.map((song) => (
+        <Category_item song={song} key={song.id_song} />
+      ))
+    ) : (
+      <div></div>
+    );
   }
 }
 
