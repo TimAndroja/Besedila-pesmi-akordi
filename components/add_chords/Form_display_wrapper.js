@@ -11,7 +11,6 @@ class Form_display_wrapper extends Component {
     youtube: "",
     text_content: [],
     text_area: "",
-    pdf_bin: null,
     pdf_file: "",
     slovenska: false,
     narodna: false,
@@ -93,6 +92,7 @@ class Form_display_wrapper extends Component {
   };
 
   post_song = (e) => {
+    var self = this;
     e.preventDefault();
     let formData = new FormData();
     formData.append("title", this.state.title);
@@ -109,7 +109,6 @@ class Form_display_wrapper extends Component {
     formData.append("popevka", this.state.popevka);
     formData.append("ljudska", this.state.ljudska);
     formData.append("font_size", this.state.font_size);
-    console.log(formData);
 
     const contenttype = {
       headers: {
@@ -121,7 +120,13 @@ class Form_display_wrapper extends Component {
       .post("http://localhost:3002/api/songs/add_song", formData, contenttype)
       .then(function (response) {
         alert(JSON.stringify(response.data));
-        console.log(response);
+        if (
+          !response.data.localeCompare(
+            "Besedilo in akordi so oddani v pregled, hvala za oddajo."
+          )
+        ) {
+          window.location.reload();
+        }
       })
       .catch(function (error) {
         console.log(error);

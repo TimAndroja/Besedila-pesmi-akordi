@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "../../scss/_content_left_side.module.scss";
 
 function Content_left_side(props) {
@@ -13,6 +13,7 @@ function Content_left_side(props) {
       return (
         <div className={styles.pdf}>
           <iframe
+            title={props.song.title + " " + props.song.author}
             src={
               "http://localhost:3002/" +
               pdf_file_name +
@@ -52,7 +53,6 @@ function Content_left_side(props) {
       </div>
     );
   };
-  useEffect(() => {}, []);
 
   return (
     <div>

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Search_content from "../components/search_results/Search_content";
 import Layout from "../components/Layout";
 import fetch from "isomorphic-unfetch";
+import Head from "next/head";
 
 function Search(props) {
   const {
@@ -10,6 +11,9 @@ function Search(props) {
   } = useRouter();
   return (
     <Layout>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <Search_content search_results={props.search_results} />
     </Layout>
   );

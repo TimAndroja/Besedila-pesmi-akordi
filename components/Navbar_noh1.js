@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import styles from "../scss/_navbar.module.scss";
+import styles from "../scss/_navbar_noh1.module.scss";
 import Link from "next/link";
 import Router from "next/router";
 import { useRouter } from "next/router";
@@ -36,7 +36,7 @@ function Navbar() {
         <Link href="/">
           <div className={styles.logo}>
             <div className={styles.besedilapesmi}>
-              <h1>Besedila Pesmi Akordi</h1>
+              <h2>Besedila Pesmi Akordi</h2>
             </div>
             <div className={styles.akordichords}>
               <div className={styles.akordi}></div>
@@ -70,6 +70,13 @@ function Navbar() {
             <Link href="/dodaj_akorde">
               <a>
                 Dodaj svoje <br /> Besedilo/Akorde
+              </a>
+            </Link>
+          </div>
+          <div className={styles.top100}>
+            <Link href="/top100">
+              <a>
+                Top 100 <br /> Akordov
               </a>
             </Link>
           </div>

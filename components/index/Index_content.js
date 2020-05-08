@@ -64,11 +64,16 @@ class Index_content extends Component {
 
         <div>
           <Link
-            href={{ pathname: "/brskaj", query: { kategorija: "popularna" } }}
+            href={{
+              pathname: "/brskaj",
+              query: { kategorija: "trenutno_popularna" },
+            }}
           >
             <div className={styles.category_name}>
               <h2>
-                <a className={styles.category_hover}>Popularna glasba:</a>
+                <a className={styles.category_hover}>
+                  Trenutno popularna glasba:
+                </a>
               </h2>
             </div>
           </Link>

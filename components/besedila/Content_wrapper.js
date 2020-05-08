@@ -13,9 +13,23 @@ class Content_wrapper extends Component {
 
           <Content_right_side song={this.props.song} />
         </div>
-
-        <div className={styles.recommendations}>
-          <Category_items songs={this.props.recommendations} />
+        <div className={styles.recommendations_wrapper}>
+          {this.props.recommendations_author.length > 0 ? (
+            <h2>Podobno po avtorju:</h2>
+          ) : (
+            <div></div>
+          )}
+          <div className={styles.recommendations}>
+            <Category_items songs={this.props.recommendations_author} />
+          </div>
+          {this.props.recommendations_category.length > 0 ? (
+            <h2>Podobno po kategoriji:</h2>
+          ) : (
+            <div></div>
+          )}
+          <div className={styles.recommendations}>
+            <Category_items songs={this.props.recommendations_category} />
+          </div>
         </div>
       </div>
     );

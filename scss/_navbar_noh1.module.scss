@@ -31,6 +31,10 @@ $navbar_height: 80px;
   }
   .besedilapesmi {
     margin-top: 10px;
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+    }
   }
   .akordichords {
     display: flex;
@@ -63,7 +67,7 @@ $navbar_height: 80px;
   height: 46px;
   margin-top: 11px;
   line-height: 1;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
   border: 1px solid rgba(128, 128, 128, 0.76);
@@ -120,6 +124,7 @@ $navbar_height: 80px;
   line-height: 1.2;
 
   .dodaj_pesem {
+    margin-right: 30px;
   }
   a {
     text-decoration: none;

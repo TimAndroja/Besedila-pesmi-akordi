@@ -15,6 +15,10 @@ $navbar_height: 80px;
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055);
   color: rgb(44, 62, 80);
+  a {
+    text-decoration: none;
+    color: map-get($colors, nav_right);
+  }
 
   @include mobile {
     grid-template-columns: 0fr 1fr 0fr;
@@ -112,14 +116,19 @@ $navbar_height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  text-align: right;
+  text-align: center;
 
   margin-bottom: 13px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
 
+  .top100 {
+    text-align: center;
+  }
+
   .dodaj_pesem {
+    margin-right: 30px;
   }
   a {
     text-decoration: none;

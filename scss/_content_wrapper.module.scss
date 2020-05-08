@@ -11,7 +11,12 @@
     justify-content: center;
   }
 }
-
+.recommendations_wrapper {
+  h2 {
+    margin-top: $default_margin;
+    font-size: 28px;
+  }
+}
 .recommendations {
   display: grid;
   margin-top: $default_margin;

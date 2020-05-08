@@ -10,19 +10,23 @@ function Navbar() {
   }
 
   function enter(e) {
-    if (e.key === "Enter") {
+    if (search_term) {
+      if (e.key === "Enter") {
+        Router.push({
+          pathname: "/brskaj",
+          query: { search_query: search_term },
+        });
+      }
+    }
+  }
+
+  function search() {
+    if (search_term) {
       Router.push({
         pathname: "/brskaj",
         query: { search_query: search_term },
       });
     }
-  }
-
-  function search() {
-    Router.push({
-      pathname: "/brskaj",
-      query: { search_query: search_term },
-    });
   }
 
   const {
@@ -36,12 +40,16 @@ function Navbar() {
         <Link href="/">
           <div className={styles.logo}>
             <div className={styles.besedilapesmi}>
-              <h1>Besedila Pesmi Akordi</h1>
+              <a href="">
+                <h1>Besedila Pesmi Akordi</h1>
+              </a>
             </div>
             <div className={styles.akordichords}>
               <div className={styles.akordi}></div>
               <div className={styles.chords}>
-                <h2>Chords Lyrics Text</h2>
+                <a href="">
+                  <h2>Chords Lyrics Text</h2>
+                </a>
               </div>
             </div>
           </div>
@@ -64,12 +72,17 @@ function Navbar() {
         </div>
 
         <div className={styles.right_menu}>
-          <div></div>
-
           <div className={styles.dodaj_pesem}>
             <Link href="/dodaj_akorde">
               <a>
                 Dodaj svoje <br /> Besedilo/Akorde
+              </a>
+            </Link>
+          </div>
+          <div className={styles.top100}>
+            <Link href="/top100">
+              <a>
+                Top 100 <br /> Akordov
               </a>
             </Link>
           </div>

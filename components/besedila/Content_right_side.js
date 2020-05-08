@@ -63,6 +63,7 @@ class Content_right_side extends Component {
 
               <div className={styles.youtube_video}>
                 <iframe
+                  title={this.props.song.title + " " + this.props.song.author}
                   src={this.props.song.youtube.replace("watch?v=", "embed/")}
                   frameBorder="0"
                   allowFullScreen="1"
