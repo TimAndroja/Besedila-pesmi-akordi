@@ -1,15 +1,23 @@
 @import "./style.scss";
 .right_side_display {
   width: 100%;
+  @include colide {
+    width: 80vw;
+    height: max;
+    margin-left: 5vw;
+  }
 }
 
 .youtube_video {
   margin-top: 5px;
-  width: 32vw;
+  width: 26vw;
   height: 18vw;
   @include colide {
     width: 80vw;
+    height: 45vw;
   }
+
+  margin-bottom: $default_margin;
 
   iframe {
     width: 100%;
@@ -25,8 +33,20 @@
 .meta_title {
   line-height: 1;
   color: map-get($colors, content_title);
+
+  
+
   h1 {
     font-weight: 500;
+    span{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 2.2;
+      color:black;
+      
+      
+      
+    }
   }
   @include colide {
     margin-top: $default_margin;
@@ -37,6 +57,9 @@
   color: map-get($colors, content_author);
   justify-content: space-between;
   margin-top: 4px;
+  @include colide {
+    display: block;
+  }
 }
 .meta_author {
   line-height: 1;
@@ -55,6 +78,9 @@
   display: flex;
   justify-content: center;
   height: 100%;
+  @include colide {
+    justify-content: start;
+  }
 }
 
 .wrapper_select {
@@ -140,6 +166,9 @@
   border: 1px solid #8f959e;
 
   border-radius: 3px;
+  @include colide {
+    display: none;
+  }
 }
 .oglas {
   margin-top: $default_margin;
@@ -147,6 +176,9 @@
   height: 350px;
 
   background-color: rgba(128, 128, 128, 0.205);
+  @include colide {
+    display: none;
+  }
 }
 
 .space_vert {

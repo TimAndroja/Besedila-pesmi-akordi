@@ -7,6 +7,7 @@ class Content_right_side extends Component {
     select1: 0,
     select2: 7,
   };
+ 
 
   //TRANSPOSE FUNCTIONS
   transpose1(index) {
@@ -50,21 +51,21 @@ class Content_right_side extends Component {
           <div className={styles.space_vert}>
             <div>
               <div className={styles.meta_title}>
-                <h1>{this.props.song.title}</h1>
+                <h1><span className={styles.span_title}>AKORDI ZA KITARO | BESEDILA Pesmi (slovenske angleške otroške božične)</span> <br /> {this.props.song.songData[0].title}</h1>
               </div>
               <div className={styles.author_views}>
                 <div className={styles.meta_author}>
-                  <h2>{this.props.song.author}</h2>
+                  <h2>{this.props.song.songData[0].author}</h2>
                 </div>
                 <div className={styles.meta_views}>
-                  {this.props.song.views} ogledov
+                  {this.props.song.songData[0].views} ogledov
                 </div>
               </div>
 
               <div className={styles.youtube_video}>
                 <iframe
-                  title={this.props.song.title + " " + this.props.song.author}
-                  src={this.props.song.youtube.replace("watch?v=", "embed/")}
+                  title={this.props.song.songData[0].title + " " + this.props.song.songData[0].author}
+                  src={this.props.song.songData[0].youtube.replace("watch?v=", "embed/")}
                   frameBorder="0"
                   allowFullScreen="1"
                   className="video"

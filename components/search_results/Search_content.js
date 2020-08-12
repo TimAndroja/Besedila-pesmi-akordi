@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { Component } from "react";
 import { useRouter, Router } from "next/router";
 import All_categories from "../index/All_categories";
@@ -19,8 +18,8 @@ function Search(props) {
           </h2>
         </div>
       );
-    else if (kategorija) {
-      switch (kategorija) {
+    else {
+      switch ((useRouter().asPath) ) {
         case "trenutno_popularna":
           return (
             <div className={styles.searched_for}>
@@ -30,7 +29,7 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "slovenska":
+        case "/kategorija/slovenske_pesmi":
           return (
             <div className={styles.searched_for}>
               <h2>
@@ -38,11 +37,11 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "dalmatinska":
+        case "/kategorija/hrvaske_pesmi":
           return (
             <div className={styles.searched_for}>
               <h2>
-                Rezultati za kategorijo "<span>Dalmatinske pesmi</span>":
+                Rezultati za kategorijo "<span>Hrvaške pesmi, Dalmatinske pesmi</span>":
               </h2>
             </div>
           );
@@ -54,7 +53,7 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "ljudska":
+        case "/kategorija/ljudske_pesmi":
           return (
             <div className={styles.searched_for}>
               <h2>
@@ -62,7 +61,7 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "popevka":
+        case "/kategorija/slovenska_popevka":
           return (
             <div className={styles.searched_for}>
               <h2>
@@ -70,7 +69,7 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "narodna":
+        case "/kategorija/narodno_zabavna_glasba":
           return (
             <div className={styles.searched_for}>
               <h2>
@@ -78,7 +77,7 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "otroska":
+        case "/kategorija/otroske_pesmice":
           return (
             <div className={styles.searched_for}>
               <h2>
@@ -86,7 +85,7 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "bozicna":
+        case "/kategorija/bozicne_pesmi":
           return (
             <div className={styles.searched_for}>
               <h2>
@@ -94,22 +93,34 @@ function Search(props) {
               </h2>
             </div>
           );
-        case "ostala":
+        case "/kategorija/rock_glasba":
           return (
             <div className={styles.searched_for}>
               <h2>
-                Rezultati za kategorijo "<span>Ostala glasba</span>":
+                Rezultati za kategorijo "<span>Rock glasba</span>":
               </h2>
             </div>
           );
-      }
-    } else if (!useRouter().asPath.localeCompare("/top100"))
-      return (
-        <div className={styles.searched_for}>
+        case "/top100":
+          return (
+            <div className={styles.searched_for}>
           <h2>Top 100 Pesmi in Akordov:</h2>
-        </div>
-      );
-  };
+          </div>
+          );
+        default:
+          console.log(useRouter().asPath);
+          return (
+            <div className={styles.searched_for}>
+          <h2>Išči besedila in akorde:</h2>
+          </div>
+          );
+          }
+  }
+}
+    
+     
+
+
 
   return (
     <div className={styles.default_margin}>

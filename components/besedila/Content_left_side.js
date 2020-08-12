@@ -1,22 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../scss/_content_left_side.module.scss";
 
-function Content_left_side(props) {
-  const [title, set_title] = useState(props.song.title);
-  const [author, set_author] = useState(props.song.author);
-  const [text_content, set_text_content] = useState(props.song.text_content);
-  const [pdf_file_name, set_pdf_file_name] = useState(props.song.pdf_file_name);
-  const [font_size, set_font_size] = useState(props.song.font_size);
+ function Content_left_side({song}) {
+  const [title, set_title] = useState(song.songData[0].title);
+  const [author, set_author] = useState(song.songData[0].author);
+  const [text_content, set_text_content] = useState(song.songData[0].text_content);
+  const [pdf_file_name, set_pdf_file_name] = useState(song.songData[0].pdf_file_name);
+  const [font_size, set_font_size] = useState(song.songData[0].font_size);
+  
+  
 
   const Show_content = () => {
-    if (pdf_file_name != null) {
+    if (song.songData[0].pdf_file_name != null) {
       return (
         <div className={styles.pdf}>
           <iframe
-            title={props.song.title + " " + props.song.author}
+            title={song.songData[0].title + " " + song.songData[0].author}
             src={
-              "http://localhost:3002/" +
-              pdf_file_name +
+              "https://besedilo-akordi.si/api/" +
+              song.songData[0].pdf_file_name +
               "#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
             }
             width="100%"

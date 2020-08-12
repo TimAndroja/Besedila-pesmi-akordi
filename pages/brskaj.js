@@ -1,39 +1,40 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Search_content from "../components/search_results/Search_content";
 import Layout from "../components/Layout";
-import fetch from "isomorphic-unfetch";
 import Head from "next/head";
+import axios from "axios";
 
-function Search(props) {
-  const {
-    query: { kategorija, search_query },
-  } = useRouter();
+function brskaj() {
+
+
+  const router = useRouter();
+  const [searchResults, setSearchResults] = useState([]);
+
+  useEffect(() => {
+    if (router.query.kategorija) {
+      axios
+        .get(
+          `https://besedilo-akordi.si/api/songs/search?kategorija=${router.query.kategorija}`
+        )
+        .then((res) => setSearchResults(res.data));
+    } else if (router.query.search_query) {
+      axios
+        .get(
+          `https://besedilo-akordi.si/api/songs/search?search_query=${router.query.search_query}`
+        )
+        .then((res) => setSearchResults(res.data));
+    }
+  }, [router.reload]);
+
   return (
     <Layout>
       <Head>
         <meta name="robots" content="noindex" />
       </Head>
-      <Search_content search_results={props.search_results} />
+      <Search_content search_results={searchResults} />
     </Layout>
   );
 }
 
-Search.getInitialProps = async function (router = useRouter()) {
-  if (router.query.kategorija || router.query.search_query) {
-    const path = router.asPath;
-    const path_query_part = path.substring(
-      path.lastIndexOf("?") + 1,
-      path.length
-    );
-    const res = await fetch(
-      `http://localhost:3002/api/songs/search?${path_query_part}`
-    );
-    const search_results = await res.json();
-
-    return { search_results };
-  }
-  return [];
-};
-
-export default Search;
+export default brskaj;

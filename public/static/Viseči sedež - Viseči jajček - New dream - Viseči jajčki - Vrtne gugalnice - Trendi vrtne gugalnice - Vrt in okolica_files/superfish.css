@@ -1,0 +1,290 @@
+.nav-container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+.sf-menu {
+  background: url(../images/nav-bg.jpg) 0 0 repeat;
+  font-size: 13px;
+  line-height: 17px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);   
+  -moz-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+  border-radius: 0 0 4px 4px;
+  margin: 0 -15px;
+}
+.sf-menu li {
+  float: left;
+  text-align: left;
+  position: relative;
+  background: url(../images/sf-menu-line.png) repeat-y right top;
+/*  z-index: 99; */
+  padding-right: 1px;
+}
+.sf-menu li a {
+  display: block;
+  color: #383737;
+  text-decoration: none;
+  position: relative;
+  padding: 0;
+}
+.sf-menu > li > a > span {
+  display: block;
+  font-size: 17px;
+  line-height: 17px;
+  color: #313131;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 19px 20px 21px;
+}
+.sf-menu li ul a span {
+  white-space: normal;
+}
+.sf-menu > li.parent > a > span {
+  background: url(../images/marker-8.gif) center 40px no-repeat;
+}
+#nav > li.sfHover > a,
+#nav > li > a:hover,
+#nav > li.active > a {  color: #fa1aba;}
+
+#nav > li.sfHover > a span,
+#nav > li > a:hover span,
+#nav > li.active > a span { color: #fa1aba;}
+.sf-menu li a:hover {text-decoration: none;}
+
+.sf-menu ul {
+  position: absolute;
+  top: -999em;
+  z-index: 99;
+  width: 192px;
+  display: none;
+  background: #2b2b2b;
+  border-radius: 0 0 3px 3px;
+}
+.sf-menu li li {  border-bottom: 1px solid #3f3f3f;}
+.sf-menu li li.last {  border-bottom: none;}
+
+.sf-menu li li.sfHover,
+.sf-menu li li,
+.sf-menu li li:hover {
+  float: none;
+  border-right: none;
+  position: relative;
+  padding: 6px 15px 6px;
+}
+.sf-menu li li a,
+.sf-menu li.sfHover li a,
+.sf-menu li.active li a {
+  display: inline-block;
+  background: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  padding: 0;
+}
+.sf-menu li li > a:hover,
+.sf-menu li li.sfHover > a,
+.sf-menu li li.active > a {  color: #fa1aba;}
+.sf-menu ul ul {
+  position: absolute;
+  top: -999em;
+  z-index: 99;
+  width: 192px;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+  left: 0px;
+  top: 58px;
+  /* match top ul list item height */
+
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+  top: -999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+  left: 193px;
+  /* match ul width */
+
+  top: 0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+  top: -999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+  left: 193px;
+  /* match ul width */
+
+  top: 0;
+}
+#menu-icon {
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 978px) {
+  .sf-menu {
+    display: block !important;
+    margin: 0 -10px;
+  }
+  .sf-menu ul {
+    width: 130px;
+  }
+  ul.sf-menu li li:hover ul,
+  ul.sf-menu li li.sfHover ul {
+    left: 131px;
+    width: 130px;
+  }
+  ul.sf-menu li li li:hover ul,
+  ul.sf-menu li li li.sfHover ul {
+    left: 131px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-menu {
+    padding: 0 20px 10px;
+    position: relative;
+  }
+  /* menu icon */
+  #menu-icon {
+    display: block;
+    background: url(../images/menu-icon-bg.png) 95% 11px no-repeat #2C2C2C;
+    border-bottom: 5px solid #FA1ABA;
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 13px 0 0 10px;
+    height: 33px;
+    margin: 0px;
+    border-radius: 4px 4px 0 0;
+  }
+  #menu-icon:hover,
+  #menu-icon.active {
+    background-color: #B90100;
+    border-bottom: 5px solid #FA1ABA;
+  }
+  #menu-icon.active {
+    background-position: 95% -47px;
+    border-color: #B90100;
+    background-color: #2C2C2C;
+  }
+  /* main nav */
+  .sf-menu {
+    display: none;
+    /* visibility will be toggled with jquery */
+  
+    background: #2C2C2C;
+    clear: both;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 13px 20px 20px;
+    z-index: 2;
+    margin: 0;
+  }
+  .sf-menu li,
+  .sf-menu li li {
+    clear: both;
+    float: none;
+    margin: 0;
+    background: none;
+    border: none;
+  }
+  .sf-menu li li.sfHover,
+  .sf-menu li li,
+  .sf-menu li li:hover {
+    padding: 8px 0;
+  }
+  .sf-menu li li.last {
+    padding-bottom: 0 !important;
+  }
+  .sf-menu li.parent > a {
+    position: relative;
+  }
+  .sf-menu > li {
+    padding: 8px 0;
+    border-bottom: 1px solid #515050;
+  }
+  .sf-menu li a {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #fff;
+  }
+  .sf-menu li a:hover {
+    color: #B90100;
+  }
+  .sf-menu > li > a > span {
+    display: inline-block;
+    color: inherit;
+    padding: 0;
+  }
+  .sf-menu li strong {
+    position: absolute;
+    display: block;
+    background: url(../images/toogle-button2.png) center -54px no-repeat;
+    top: 4px;
+    right: 0;
+    height: 24px;
+    width: 24px;
+  }
+  .sf-menu li strong:hover {
+    cursor: pointer;
+  }
+  .sf-menu li strong.opened {
+    background-position: center 7px;
+  }
+  .sf-menu a,
+  .sf-menu ul a {
+    font: inherit;
+    display: inline;
+    border: none;
+  }
+  /* dropdown */
+  .sf-menu ul,
+  .sf-menu ul ul {
+    width: auto;
+    position: static;
+    border: none;
+    background: inherit;
+    padding: 8px 0 0 20px;
+    box-shadow: none;
+  }
+  #nav > li.sfHover > a,
+  #nav > li > a:hover span,
+  #nav > li.active > a {
+    color: #FA1ABA;
+  }
+  .nav-container {
+    margin-bottom: 17px;
+  }
+  #menu-icon:hover,
+  #menu-icon.active {
+    background-color: #2C2C2C;
+    border-bottom: 5px solid #FA1ABA;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #menu-icon {
+    cursor: pointer;
+    display: block;
+    /* show menu icon */
+  
+    text-indent: 0px;
+    background-position: 96% 11px;
+  }
+  #menu-icon.active {
+    background-position: 96% -47px;
+  }
+}
+/* ======================================================================================= */
+@media (min-width: 1200px) {
+ .sf-menu {
+	margin: 0;
+ }
+}

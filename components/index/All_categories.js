@@ -7,7 +7,8 @@ class All_categorys extends Component {
     return (
       <div className={styles.kategorije}>
         <Link
-          href={{ pathname: "/brskaj", query: { kategorija: "slovenska" } }}
+         href="/kategorija/slovenske_pesmi"
+          
         >
           <div className={styles.kategorija}>
             <h2>Slovenske pesmi</h2>
@@ -15,39 +16,39 @@ class All_categorys extends Component {
         </Link>
 
         <Link
-          href={{ pathname: "/brskaj", query: { kategorija: "dalmatinska" } }}
+          href="/kategorija/hrvaske_pesmi"
         >
           <div className={styles.kategorija}>
-            <h2> Dalmatinske pesmi</h2>
+            <h2>Hrvaške pesmi</h2>
           </div>
         </Link>
-        <Link href={{ pathname: "/brskaj", query: { kategorija: "tuja" } }}>
+        <Link href="/kategorija/rock_glasba">
           <div className={styles.kategorija}>
-            <h2>Tuja glasba</h2>
+            <h2>Rock glasba</h2>
           </div>
         </Link>
 
-        <Link href={{ pathname: "/brskaj", query: { kategorija: "ljudska" } }}>
+        <Link href="/kategorija/ljudske_pesmi">
           <div className={styles.kategorija}>
             <h2>Ljudske pesmi</h2>
           </div>
         </Link>
-        <Link href={{ pathname: "/brskaj", query: { kategorija: "popevka" } }}>
+        <Link href="/kategorija/slovenska_popevka">
           <div className={styles.kategorija}>
             <h2>Slovenska popevka</h2>
           </div>
         </Link>
-        <Link href={{ pathname: "/brskaj", query: { kategorija: "narodna" } }}>
+        <Link href="/kategorija/narodno_zabavna_glasba">
           <div className={styles.kategorija}>
             <h2>Narodno zabavna glasba</h2>
           </div>
         </Link>
-        <Link href={{ pathname: "/brskaj", query: { kategorija: "otroska" } }}>
+        <Link href="/kategorija/otroske_pesmice">
           <div className={styles.kategorija}>
             <h2>Otroške pesmice</h2>
           </div>
         </Link>
-        <Link href={{ pathname: "/brskaj", query: { kategorija: "bozicna" } }}>
+        <Link href="/kategorija/bozicne_pesmi">
           <div className={styles.kategorija}>
             <h2>Božične pesmi</h2>
           </div>

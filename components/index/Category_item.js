@@ -6,14 +6,14 @@ class Category_item extends React.Component {
   render() {
     return (
       <Link
-        href="/besedila/[id]"
-        as={`/besedila/${
+        href="/pesmi/[id]"
+        as={`/pesmi/${
           this.props.song.title
             .toLowerCase()
             .replace(/\s/g, "-")
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "") +
-          "-" +
+          "-akordi-za-kitaro-" +
           this.props.song.id_song
         }`}
       >
@@ -24,12 +24,12 @@ class Category_item extends React.Component {
                 <div
                   className={styles.cardimagediv}
                   style={{
-                    backgroundImage: `url(http://localhost:3002/${this.props.song.youtube_image_name})`,
+                    backgroundImage: `url(https://besedilo-akordi.si/api/${this.props.song.youtube_image_name})`,
                   }}
                 >
                   <img
                     className={styles.cardimage}
-                    src="https://img.youtube.com/vi/FOODhMCWJsc/0.jpg"
+                    src="../static/card_image.jpg"
                     alt="test"
                   />
                 </div>

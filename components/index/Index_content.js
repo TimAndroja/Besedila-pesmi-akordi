@@ -16,58 +16,39 @@ class Index_content extends Component {
     songs_otroske: [],
     songs_ljudske: [],
     songs_slovenska_popevka: [],
-    songs_ostalo: [],
+    songs_rock: [],
   };
 
   componentDidMount() {
-    axios
-      .get("http://localhost:3002/api/songs/popularna")
-      .then((res) => this.setState({ songs_popularno: res.data }));
 
-    axios
-      .get("http://localhost:3002/api/songs/slovenska")
-      .then((res) => this.setState({ songs_slovenske: res.data }));
 
-    axios
-      .get("http://localhost:3002/api/songs/dalmatinska")
-      .then((res) => this.setState({ songs_dalmatinske: res.data }));
+    this.setState({ songs_popularno: this.props.songs[0].songs_popularno });
 
-    axios
-      .get("http://localhost:3002/api/songs/tuja")
-      .then((res) => this.setState({ songs_tuje: res.data }));
+    this.setState({ songs_slovenske: this.props.songs[1].songs_slovenske});
 
-    axios
-      .get("http://localhost:3002/api/songs/narodna")
-      .then((res) => this.setState({ songs_narodno_zabavne: res.data }));
+    this.setState({ songs_dalmatinske:this.props.songs[2].songs_dalmatinske });
 
-    axios
-      .get("http://localhost:3002/api/songs/otroska")
-      .then((res) => this.setState({ songs_otroske: res.data }));
+     this.setState({ songs_tuje:this.props.songs[3].songs_tuje });
 
-    axios
-      .get("http://localhost:3002/api/songs/ljudska")
-      .then((res) => this.setState({ songs_ljudske: res.data }));
+    this.setState({ songs_narodno_zabavne:this.props.songs[4].songs_narodno_zabavne});
+    this.setState({ songs_otroske: this.props.songs[5].songs_otroske });
 
-    axios
-      .get("http://localhost:3002/api/songs/popevka")
-      .then((res) => this.setState({ songs_slovenska_popevka: res.data }));
+     this.setState({ songs_ljudske: this.props.songs[6].songs_ljudske});
 
-    axios
-      .get("http://localhost:3002/api/songs/ostala")
-      .then((res) => this.setState({ songs_ostalo: res.data }));
+    this.setState({ songs_slovenska_popevka: this.props.songs[7].songs_slovenska_popevka});
+
+    this.setState({ songs_rock: this.props.songs[8].songs_rock });
   }
 
   render() {
+ 
     return (
       <div className={styles.default_margin}>
         <All_categories />
 
         <div>
           <Link
-            href={{
-              pathname: "/brskaj",
-              query: { kategorija: "trenutno_popularna" },
-            }}
+             href="/kategorija/popularne_pesmi"
           >
             <div className={styles.category_name}>
               <h2>
@@ -86,7 +67,7 @@ class Index_content extends Component {
         <div className={styles.split_categorys}>
           <div>
             <Link
-              href={{ pathname: "/brskaj", query: { kategorija: "narodna" } }}
+              href="/kategorija/narodno_zabavna_glasba"
             >
               <div className={styles.category_name2}>
                 <h2>
@@ -103,14 +84,11 @@ class Index_content extends Component {
           </div>
           <div>
             <Link
-              href={{
-                pathname: "/brskaj",
-                query: { kategorija: "dalmatinska" },
-              }}
+              href="/kategorija/hrvaske_pesmi"
             >
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Dalmatinske pesmi:</a>
+                  <a className={styles.category_hover}>Hrvaške pesmi, Dalmatinske pesmi:</a>
                 </h2>
               </div>
             </Link>
@@ -123,21 +101,21 @@ class Index_content extends Component {
 
         <div className={styles.split_categorys}>
           <div>
-            <Link href={{ pathname: "/brskaj", query: { kategorija: "tuja" } }}>
+            <Link href="/kategorija/rock_glasba">
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Tuja glasba:</a>
+                  <a className={styles.category_hover}>Rock glasba, YUGO Rock:</a>
                 </h2>
               </div>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
-              <Category_items songs={this.state.songs_tuje} />
+              <Category_items songs={this.state.songs_rock} />
             </div>
           </div>
           <div>
             <Link
-              href={{ pathname: "/brskaj", query: { kategorija: "slovenska" } }}
+              href="/kategorija/slovenske_pesmi"
             >
               <div className={styles.category_name2}>
                 <h2>
@@ -155,7 +133,7 @@ class Index_content extends Component {
         <div className={styles.split_categorys}>
           <div>
             <Link
-              href={{ pathname: "/brskaj", query: { kategorija: "otroska" } }}
+             href="/kategorija/otroske_pesmice"
             >
               <div className={styles.category_name2}>
                 <h2>
@@ -170,7 +148,7 @@ class Index_content extends Component {
           </div>
           <div>
             <Link
-              href={{ pathname: "/brskaj", query: { kategorija: "ljudska" } }}
+              href="/kategorija/ljudske_pesmi"
             >
               <div className={styles.category_name2}>
                 <h2>
@@ -187,7 +165,7 @@ class Index_content extends Component {
         <div className={styles.split_categorys}>
           <div>
             <Link
-              href={{ pathname: "/brskaj", query: { kategorija: "popevka" } }}
+              href="/kategorija/slovenska_popevka"
             >
               <div className={styles.category_name2}>
                 <h2>
@@ -201,20 +179,25 @@ class Index_content extends Component {
             </div>
           </div>
           <div>
-            <Link
-              href={{ pathname: "/brskaj", query: { kategorija: "ostala" } }}
-            >
+            <Link href="/kategorija/angleske_pesmi">
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Ostala glasba:</a>
+                  <a className={styles.category_hover}>Angleške pesmi (tuje)
+                  </a>
                 </h2>
               </div>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
-              <Category_items songs={this.state.songs_ostalo} />
+              <Category_items songs={this.state.songs_tuje} />
             </div>
           </div>
+        </div>
+        <div className={styles.description_2}>
+          <p>
+            <strong>AKORDI ZA KITARO IN BESEDILA PESMI </strong> popularnih aktualnih ansamblov, bandov, glasbenih skupin, glasbenikov in pevcev. Glasbeni portal je namenjen  vsem ljubiteljem slovenske in ostale glasbe, ki želijo poleg besedila posamezne pesmi imeti  še pripadajoče akorde za to pesem. Akordi vam bodo v pomoč pri učenju: kitare, klaviature, klavirja, sintesajzerja, harmonike ipd. tako da lahko svojo priljubljeno pesem pojete in istočasno spremljate na svojem glasbenem instrumentu. Določene pesmi poleg prijemov za kitaro vsebujejo tudi tablature za kitaro katere veliko kitaristov uporablja namesto not, da pridobi lažjo in hitrejšo orientacijo. Na portalu so zbrana raznovrstna besedila pesmi z akordi, zato sva jih razvrstila v 8 glasbenih skupin: Slovenske pesmi, Angleške pesmi, Otroške pesmice, Božične pesmi, Hrvaške pesmi, Ljudske pesmi, Slovenska popevka, in Narodno zabavna glasba.  Zaradi enostavnost iskanja lahko določeno pesem najdete v različnih glasbenih skupinah npr: Pesem V dolini tihi spada pod ( Narodno zabavna glasba, Ljudske pesmi, Slovenske pesmi).  
+          </p>
+          <p> Posebnost glasbenega portala AKORDI ZA KITARO BESEDILA pesmi je ta, da na njem lahko istočasno gledate videospot ter spremljate besedilo, akorde in tablaturo vaše prilubljene skladbe. Vabimo vas, da tudi vi prispevate priljubljene pesmi z akordi in besedilom ter povezavo do ustreznega videa. Naj vam bo naš portal v pomoč pri igranju kitare, klaviature, harmonike oziroma drugega akordičnega glasbila.  Avtorja portala Tim & <a href="https://ansambel-objem.si/glasbena-sola/" target="blank">Tugomir Androja</a>  vam želiva veliko glasbenih užitkov.</p>
         </div>
       </div>
     );

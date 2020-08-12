@@ -20,6 +20,7 @@ class Form_display_wrapper extends Component {
     popevka: false,
     ljudska: false,
     bozicna: false,
+    rock: false,
 
     zamik: 0,
     font_size: 0.8,
@@ -108,6 +109,7 @@ class Form_display_wrapper extends Component {
     formData.append("bozicna", this.state.bozicna);
     formData.append("popevka", this.state.popevka);
     formData.append("ljudska", this.state.ljudska);
+    formData.append("rock", this.state.rock);
     formData.append("font_size", this.state.font_size);
 
     const contenttype = {
@@ -117,7 +119,11 @@ class Form_display_wrapper extends Component {
     };
 
     axios
-      .post("http://localhost:3002/api/songs/add_song", formData, contenttype)
+      .post(
+        "https://besedilo-akordi.si/api/songs/add_song",
+        formData,
+        contenttype
+      )
       .then(function (response) {
         alert(JSON.stringify(response.data));
         if (
@@ -158,7 +164,7 @@ class Form_display_wrapper extends Component {
               </div>
               <div className={styles.text_input}>
                 <div>
-                  <label>Avtor: </label>
+                  <label>Izvajalec: </label>
                 </div>
 
                 <input
@@ -181,7 +187,7 @@ class Form_display_wrapper extends Component {
                   name="youtube"
                   value={this.state.youtube}
                   onChange={this.onChange}
-                  placeholder="youtube link"
+                  placeholder="Youtube link"
                   required="1"
                 />
               </div>
@@ -272,6 +278,14 @@ class Form_display_wrapper extends Component {
                     onChange={this.checkbox_change}
                   />
                   <label>otroška</label>
+                </div>
+                <div className={styles.cat}>
+                  <input
+                    type="checkbox"
+                    name="rock"
+                    onChange={this.checkbox_change}
+                  />
+                  <label>rock</label>
                 </div>
               </div>
               <div className={styles.pick_categories}>

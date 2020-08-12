@@ -1,0 +1,16 @@
+.cookiealert {background: #333; color: #fff; padding: 5px 0; font-size: 12px; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 99999999; }
+.cookiealert .container { max-width: 960px; margin: 0 auto; box-sizing: border-box; padding: 5px 10px; }
+.cookiealert .message { text-align: left; overflow: hidden; padding-right: 15px; float: left;  width: 80%; box-sizing: border-box; }
+.cookiealert .buttons-set { float: right; margin: 0; width: 20%; border:0; padding: 10px 0 0 0; box-sizing: border-box; clear: none; text-align: right; }
+
+.cookiealert .message span.cookie-title{display: block; color: #fff; font-size: 14px; font-weight: bold;}
+.cookiealert .message a{color: #f90; text-decoration: underline;}
+.cookiealert .message a:hover{text-decoration: none;}
+.cookiealert .message .close a{font-size: 16px; text-decoration: none; font-weight: bold;}
+.cookiealert .message .close a:hover{text-decoration: underline;}
+.cookiealert .buttons-set .decline { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity: 0.8; }
+
+@media (max-width:960px) {
+	.cookiealert .message,
+	.cookiealert .buttons-set { float: none; width: 100%; text-align: left; }
+}

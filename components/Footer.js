@@ -10,22 +10,22 @@ class Footer extends React.Component {
             <div className={styles.left_footer}>
               <div className={styles.title_footer}>Vabimo k ogledu:</div>
               <div>
-                <a href="http://glasbena-skupina.si/  ">
+                <a href="https://ansambel-objem.si/"  target="blank">
                   Ansambel Skupina OBJEM
                 </a>
               </div>
               <div>
-                <a href="http://glasbena-delavnica.si/default.htm">
+                <a href="https://ansambel-objem.si/glasbena-sola-foto-galerija/"  target="blank">
                   Glasbena Šola Androja
                 </a>
               </div>
               <div>
-                <a href="http://snemalni-studio.si/index.html ">
+                <a href="https://ansambel-objem.si/glasbeni-snemalni-studio/" target="blank">
                   Snemalni studio Androja
                 </a>
               </div>
               <div>
-                <a href="https://www.youtube.com/user/mrandroja   ">
+                <a href="httpss://www.youtube.com/user/mrandroja"  target="blank">
                   PESMI GLASBA Slovenske Dalmatinske - OBJEM{" "}
                 </a>
               </div>

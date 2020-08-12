@@ -1,23 +1,34 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Search_content from "../components/search_results/Search_content";
 import Layout from "../components/Layout";
+import Head from "next/head";
+import axios from "axios";
 import fetch from "isomorphic-unfetch";
-import head from "next/head";
 
 function top100(props) {
+  const [searchResults, setSearchResult] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://besedilo-akordi.si/api/songs/top100")
+      .then((res) => setSearchResult(res.data));
+  }, []);
+
+
+  
+ 
+
   return (
     <Layout>
-      <head></head>
-      <Search_content search_results={props.search_results} />
+      <Head>
+        <title>Top 100 gledano - Besedila pesmi in Akordi za kitaro</title>
+        <meta
+          name="description"
+          content="Besedila pesmi in Akordi z video spotom. Mnogi glasbeni izvajlci, Popularna glasba, Dalmatinske pesmi, Narodno zabavna glasba, Otroške pesmice.."
+        />
+      </Head>
+      <Search_content search_results={searchResults} />
     </Layout>
   );
 }
-
-top100.getInitialProps = async function () {
-  const res = await fetch(`http://localhost:3002/api/songs/top100`);
-  const search_results = await res.json();
-
-  return { search_results };
-};
 
 export default top100;

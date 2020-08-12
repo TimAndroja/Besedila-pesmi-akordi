@@ -1,5 +1,6 @@
 @import "./style.scss";
 .default_margin {
+  justify-content: center;
   margin: 0 $margin_side 0 $margin_side;
 }
 
@@ -7,14 +8,16 @@
   margin-top: $default_margin;
   display: flex;
   @include colide {
-    display: grid;
-    justify-content: center;
+    display: block;
   }
 }
 .recommendations_wrapper {
   h2 {
     margin-top: $default_margin;
     font-size: 28px;
+  }
+  @include mobile {
+    display: none;
   }
 }
 .recommendations {
@@ -27,6 +30,12 @@
     grid-template-columns: repeat(4, 1fr);
   }
   @include mobile {
-    visibility: hidden;
+    display: none;
   }
+}
+
+.song_description{
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 500;
 }

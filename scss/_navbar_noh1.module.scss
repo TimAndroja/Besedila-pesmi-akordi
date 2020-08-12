@@ -116,7 +116,7 @@ $navbar_height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  text-align: right;
+
 
   margin-bottom: 13px;
   font-weight: 700;
@@ -125,6 +125,7 @@ $navbar_height: 80px;
 
   .dodaj_pesem {
     margin-right: 30px;
+    text-align: center;
   }
   a {
     text-decoration: none;
