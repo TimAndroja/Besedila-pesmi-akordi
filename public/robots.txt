@@ -1,0 +1,6 @@
+Sitemap: https://besedilo-akordi.si/api/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

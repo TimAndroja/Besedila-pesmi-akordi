@@ -3,6 +3,8 @@ import Layout from "../components//Layout";
 import Index_content from "../components/index/Index_content";
 import Head from "next/head";
 import axios from "axios";
+
+
 class Index extends React.Component {
   render() {
     return (
