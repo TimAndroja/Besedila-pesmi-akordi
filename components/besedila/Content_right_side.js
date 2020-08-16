@@ -51,7 +51,7 @@ class Content_right_side extends Component {
           <div className={styles.space_vert}>
             <div>
               <div className={styles.meta_title}>
-                <h1><span className={styles.span_title}>AKORDI ZA KITARO | BESEDILA Pesmi (slovenske angleške otroške božične)</span> <br /> {this.props.song.songData[0].title}</h1>
+                <h1><span className={styles.span_title}>Besedilo z akordi za kitaro</span> <br /> {this.props.song.songData[0].title}</h1>
               </div>
               <div className={styles.author_views}>
                 <div className={styles.meta_author}>

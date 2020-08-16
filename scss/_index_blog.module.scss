@@ -1,0 +1,68 @@
+@import "./style.scss";
+
+.wrapper{
+    margin: $default_margin $margin_side;
+}
+
+.row_wrapper{
+    margin-bottom:50px;
+}
+
+.componnent_wrapper{
+    background-color: white;
+}
+
+.componnent_wrapper2{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2%;
+ 
+}
+
+.article{
+    background-color: #f3f3f3;;
+    display: grid;
+    grid-template-rows: auto auto 1fr ;
+    
+   
+}
+
+
+.componnent_title h2{
+    font-weight: 500;
+    font-size: 30px;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+.component_media{
+    text-align: center;
+   
+}
+.component_media img{
+    width:60%;
+}
+
+.component_media iframe{
+    width:60%;
+    height: 400px;
+    
+}
+.component_description{
+    background-color: #f5f7fa;
+    
+}
+
+.component_description_title{
+    font-size: 25px;
+    font-weight: bold;
+    padding:20px 20px 0 20px;
+    
+}
+.component_description_text{
+    padding:  20px;
+    
+}
+
+

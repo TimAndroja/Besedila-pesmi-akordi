@@ -4,7 +4,6 @@ import All_categories from "./All_categories";
 import Index_description1 from "./Index_description_1";
 import Category_items from "./Category_items";
 import Link from "next/link";
-import axios from "axios";
 
 class Index_content extends Component {
   state = {
@@ -49,14 +48,13 @@ class Index_content extends Component {
         <div>
           <Link
              href="/kategorija/popularne_pesmi"
-          >
+          ><a className={styles.category_hover}>
             <div className={styles.category_name}>
               <h2>
-                <a className={styles.category_hover}>
                   Trenutno popularna glasba:
-                </a>
               </h2>
             </div>
+            </a>
           </Link>
           <div className={styles.linebreak}></div>
           <div className={styles.to_grid}>
@@ -68,14 +66,13 @@ class Index_content extends Component {
           <div>
             <Link
               href="/kategorija/narodno_zabavna_glasba"
-            >
+            ><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>
-                    Narodno Zabavna Glasba:
-                  </a>
+                    Narodno Zabavna Glasba:       
                 </h2>
               </div>
+              </a>
             </Link>
             <div className={styles.linebreak2}></div>
             <div className={styles.to_grid2}>
@@ -84,13 +81,14 @@ class Index_content extends Component {
           </div>
           <div>
             <Link
-              href="/kategorija/hrvaske_pesmi"
-            >
+              href="/kategorija/hrvaske_pesmi_dalmatinske_pesmi_ex_yu_pesmi"
+            ><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Hrvaške pesmi, Dalmatinske pesmi:</a>
+                  Hrvaške pesmi, Dalmatinske pesmi, Ex yu:
                 </h2>
               </div>
+              </a>
             </Link>
             <div className={styles.linebreak2}></div>
             <div className={styles.to_grid3}>
@@ -102,11 +100,13 @@ class Index_content extends Component {
         <div className={styles.split_categorys}>
           <div>
             <Link href="/kategorija/rock_glasba">
+            <a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Rock glasba, YUGO Rock:</a>
+                  Rock glasba, YUGO Rock:
                 </h2>
               </div>
+              </a>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
@@ -116,12 +116,13 @@ class Index_content extends Component {
           <div>
             <Link
               href="/kategorija/slovenske_pesmi"
-            >
+            ><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Slovenske pesmi:</a>
+                  Slovenske pesmi:
                 </h2>
               </div>
+              </a>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
@@ -134,12 +135,13 @@ class Index_content extends Component {
           <div>
             <Link
              href="/kategorija/otroske_pesmice"
-            >
+            ><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Otroške pesmice:</a>
+                  Otroške pesmice:
                 </h2>
               </div>
+              </a>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
@@ -149,12 +151,12 @@ class Index_content extends Component {
           <div>
             <Link
               href="/kategorija/ljudske_pesmi"
-            >
+            ><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Ljudske pesmi:</a>
+                  Ljudske pesmi:
                 </h2>
-              </div>
+              </div></a>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>
@@ -166,12 +168,12 @@ class Index_content extends Component {
           <div>
             <Link
               href="/kategorija/slovenska_popevka"
-            >
+            ><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Slovenska popevka:</a>
+                  Slovenska popevka:
                 </h2>
-              </div>
+              </div></a>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid2}>
@@ -179,13 +181,13 @@ class Index_content extends Component {
             </div>
           </div>
           <div>
-            <Link href="/kategorija/angleske_pesmi">
+            <Link href="/kategorija/angleske_pesmi"><a className={styles.category_hover}>
               <div className={styles.category_name2}>
                 <h2>
-                  <a className={styles.category_hover}>Angleške pesmi (tuje)
-                  </a>
+                  Angleške pesmi (tuje)
+                 
                 </h2>
-              </div>
+              </div></a>
             </Link>
             <div className={styles.linebreak}></div>
             <div className={styles.to_grid3}>

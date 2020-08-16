@@ -16,9 +16,9 @@ class Category_item extends React.Component {
           "-akordi-za-kitaro-" +
           this.props.song.id_song
         }`}
-      >
+      ><a className={styles.cardlink}>
         <div>
-          <a className={styles.cardlink}>
+         
             <div className={styles.cardwrapper}>
               <div className={styles.card_image_wrapper}>
                 <div
@@ -30,7 +30,7 @@ class Category_item extends React.Component {
                   <img
                     className={styles.cardimage}
                     src="../static/card_image.jpg"
-                    alt="test"
+                    alt=""
                   />
                 </div>
                 <div className={styles.stats}>
@@ -56,8 +56,9 @@ class Category_item extends React.Component {
                 </h6>
               </div>
             </div>
-          </a>
+        
         </div>
+        </a>
       </Link>
     );
   }

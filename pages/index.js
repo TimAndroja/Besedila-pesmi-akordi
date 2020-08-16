@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Layout from "../components//Layout";
 import Index_content from "../components/index/Index_content";
+import Index_blog from "../components/index/Index_blog.js";
 import Head from "next/head";
 import axios from "axios";
 
@@ -10,7 +11,7 @@ class Index extends React.Component {
     return (
       <Layout>
         <Head>
-          <title>Akordi in Besedilo za KITARO | Besedila pesmi (Slovenske Angleške Otroške Božične)</title>
+          <title> AKORDI ZA KITARO | Besedila Pesmi (slovenske angleške otroške božične)</title>
           <meta
             name="description"
             content="AKORDI IN BESEDILA PESMI ZA KITARO. Slovenski glasbeni portal z akordi (prijemi) besedili pesmi in tablature za kitaro. Naj z nami Učenje kitare postane zabava."
@@ -22,6 +23,7 @@ class Index extends React.Component {
           <meta name='robots' content='index,follow'/>
         </Head>
         <Index_content songs = {this.props.songs} />
+        <Index_blog></Index_blog>
       </Layout>
     );
   }

@@ -30,7 +30,11 @@ function brskaj() {
   return (
     <Layout>
       <Head>
-        <meta name="robots" content="noindex" />
+      <title> BRSKAJ AKORDE ZA KITARO | Besedila Pesmi (slovenske angleške otroške božične)</title>
+          <meta
+            name="description"
+            content="Išči našo bazo akordov za kitaro. Zagotovo najdeš nekaj, kar ti bo všeč!"
+          />
       </Head>
       <Search_content search_results={searchResults} />
     </Layout>

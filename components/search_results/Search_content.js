@@ -108,7 +108,6 @@ function Search(props) {
           </div>
           );
         default:
-          console.log(useRouter().asPath);
           return (
             <div className={styles.searched_for}>
           <h2>Išči besedila in akorde:</h2>
@@ -117,6 +116,14 @@ function Search(props) {
           }
   }
 }
+
+const Heading1 = (props) => (
+  <div>
+       <h1 className={styles.category_h1}>   {props.children} Besedila pesmi z akordi za kitaro
+  </h1>
+</div>
+);
+
     
      
 
@@ -125,6 +132,7 @@ function Search(props) {
   return (
     <div className={styles.default_margin}>
       <All_categories />
+  <Heading1>{props.title}</Heading1>
       <Searched_for />
       <div className={styles.search_results}>
         <Category_items songs={props.search_results} />

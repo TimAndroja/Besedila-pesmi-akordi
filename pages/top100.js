@@ -20,13 +20,13 @@ function top100(props) {
   return (
     <Layout>
       <Head>
-        <title>Top 100 gledano - Besedila pesmi in Akordi za kitaro</title>
+        <title>TOP 100 NAJBOLJ GLEDANO | Besedila pesmi z akordi za kitaro</title>
         <meta
           name="description"
           content="Besedila pesmi in Akordi z video spotom. Mnogi glasbeni izvajlci, Popularna glasba, Dalmatinske pesmi, Narodno zabavna glasba, Otroške pesmice.."
         />
       </Head>
-      <Search_content search_results={searchResults} />
+      <Search_content search_results={searchResults} title="NAJBOLJ GLEDANO | " />
     </Layout>
   );
 }

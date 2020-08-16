@@ -8,6 +8,7 @@
   margin-top: 25px;
   color: map-get($colors, category_color);
   font-weight: bold;
+  transition: $link_transition_time ease-in-out;
 
   h2 {
     font-size: 26px;
@@ -27,6 +28,7 @@
   margin-top: $default_margin;
   color: map-get($colors, category_color);
   font-weight: bold;
+  transition: $link_transition_time ease-in-out;
   @include mobile {
     visibility: hidden;
   }
@@ -36,15 +38,22 @@
   }
 }
 
-.category_hover {
-  transition: $link_transition_time ease-in-out;
-}
-
-.category_hover:hover {
+.category_name:hover{
   color: map-get($colors, category_color_hover);
   cursor: pointer;
   transition: $link_transition_time ease-in-out;
 }
+
+
+.category_name2:hover{
+  color: map-get($colors, category_color_hover);
+  cursor: pointer;
+  transition: $link_transition_time ease-in-out;
+}
+
+
+
+
 
 .linebreak {
   margin-top: 4px;

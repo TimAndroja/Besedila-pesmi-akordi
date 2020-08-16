@@ -3,7 +3,7 @@
 $navbar_height: 80px;
 
 .nav {
-  padding: 4px $margin_side 0px $margin_side;
+  padding: 5px $margin_side 0px $margin_side;
   display: grid;
   grid-template-columns: 10fr 9fr 10fr;
   grid-column-gap: 0px;
@@ -12,9 +12,8 @@ $navbar_height: 80px;
   width: 100%;
   font-size: 30px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.048);
-  background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.055);
-  color: rgb(44, 62, 80);
+  color: #FFFFFF;
   a {
     text-decoration: none;
     color: map-get($colors, nav_right);
@@ -73,7 +72,7 @@ $navbar_height: 80px;
   border: 1px solid rgba(128, 128, 128, 0.76);
   border-radius: 3px;
   background-color: map-get($colors, search_background);
-  color: rgba(44, 42, 42, 0.9);
+  color: #FFFFFF;
   font-size: 24px;
   align-content: center;
 
@@ -118,7 +117,7 @@ $navbar_height: 80px;
   justify-content: flex-end;
   text-align: center;
 
-  margin-bottom: 13px;
+  margin-bottom: 7px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
