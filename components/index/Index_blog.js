@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../../scss/_index_blog.module.scss";
+import Link from "next/link";
 
 function Index_blog ({song,recommendations_author,recommendations_category}) {
  
@@ -45,6 +46,7 @@ function Index_blog ({song,recommendations_author,recommendations_category}) {
                     <div className={styles.component_description_text}> 
                     
                     <p>V interaktivni kitarski lekciji se boš nauči Osnoven ritem igranja, napreden ritem igranja, štetje in poudarjanje ritma, osnovne akorde, Igranje melodije, pridobil ogromno glasbenega znanja, napotkov in trikov pri učenju kitare in še mnogo več.</p>
+                    <p>Literaturo za učenje kitare najdeš tukaj <Link href="/pesmi/vse-najboljse-za-te---ucenje-kitare,-lekcija-akordi-za-kitaro-288"><a>Vse najboljše - chords and lyrics</a></Link></p>
                     </div>
                    
                 </div>
@@ -57,8 +59,8 @@ function Index_blog ({song,recommendations_author,recommendations_category}) {
                     <div className={styles.component_description_title}>Sreča na vrvici akordi in lekcija za kitaro, tablature (Chords, Lyrics, Tabs)</div>
                     <div className={styles.component_description_text}> 
                     <p>V interaktivni kitarski lekciji se učimo pesem Sreča na vrvici, prijemi akordov, napredne ritme igranja, napredne tehnike igranja kitare (pok strun, zatiranje zvoka strun..) in mnogo več. </p>
+                    <p>Note in akorde najdeš preko portala, ali preko linka <Link href="/pesmi/sreca-na-vrvici-akordi-za-kitaro-284"><a>Sreča na vrvici - chords & lyrics</a></Link></p>
                     </div>
-                   
                 </div>
 
             </article>
