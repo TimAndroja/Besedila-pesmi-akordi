@@ -40,7 +40,7 @@ function Index_blog ({song,recommendations_author,recommendations_category}) {
              <div className={styles.componnent_wrapper2}>
             <article className={styles.article}>
                 <div className={styles.componnent_title}><h2>Lekcija za kitaro Vse najboljše (Osnove kitare)</h2></div>
-                <div className={styles.component_media}><iframe  src="https://www.youtube.com/embed/D6uG69aL3VQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div className={styles.component_media}><iframe  src="https://www.youtube.com/embed/D6uG69aL3VQ" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe></div>
                 <div className={styles.component_description}>
                     <div className={styles.component_description_title}>Vse najbolješ kitarska lekcija (Chords, Lyrics, Tabs)</div>
                     <div className={styles.component_description_text}> 
@@ -54,7 +54,7 @@ function Index_blog ({song,recommendations_author,recommendations_category}) {
             </article>
             <article className={styles.article}>
                 <div className={styles.componnent_title}><h2>Lekcija za kitaro Sreča na vrvici (Srednje zahtevna lekcija)</h2></div>
-                <div className={styles.component_media}><iframe  src="https://www.youtube.com/embed/Qdji1IbMIe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div className={styles.component_media}><iframe  src="https://www.youtube.com/embed/Qdji1IbMIe0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe></div>
                 <div className={styles.component_description}>
                     <div className={styles.component_description_title}>Sreča na vrvici akordi in lekcija za kitaro, tablature (Chords, Lyrics, Tabs)</div>
                     <div className={styles.component_description_text}> 
