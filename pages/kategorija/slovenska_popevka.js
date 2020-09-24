@@ -21,11 +21,18 @@ function slovenska_popevka({searchResults}) {
         />
       </Head>
       <Search_content search_results={searchResults} title="SLOVENSKA POPEVKA | " />
-      <p style={{margin:"50px 5%", textAlign:"center", lineHeight:"1.4"}}>Dobrodošli v kategoriji Slovenska Popevka. Ponujamo vam veliko zbirko akordov za kitaro, klavir in druge inštrumente. Vabimo, da tudi vi dodate svoje akorde ali tablature za kakšno Slovensko popevko  in tako nam, vam in vsem drugim omogočite obilo zabave pri igranju in učenju besedil pesmi in akordov. Dodajanje svojega besedila je mogoče v orodni vrstici na zavihku  <Link href="/dodaj_akorde"> Dodaj svoje
+      <div className="seo_wrapper" style={{ width:"90%", margin:"50px auto"}}>
+        <h2>Akordi in besedila pesmi slovenske popevke</h2>
+      <p style={{ textAlign:"justify", lineHeight:"1.4"}}>Dobrodošli v kategoriji Slovenska Popevka. Ponujamo vam veliko zbirko akordov za kitaro, klavir in druge inštrumente. Vabimo, da tudi vi dodate svoje akorde ali tablature za kakšno Slovensko popevko  in tako nam, vam in vsem drugim omogočite obilo zabave pri igranju in učenju besedil pesmi in akordov. Dodajanje svojega besedila je mogoče v orodni vrstici na zavihku  <Link href="/dodaj_akorde"> Dodaj svoje
 Besedilo/Akorde</Link>. Če rabite pomoč pri igranju kitare ali pa vas morda zanima kaj drugega z glasbenega področja, vam na začetni strani ponujamo glasbene članke, od onsnovnih akordov za kitaro, video lekcij za učenje kitare, do malo bolj teoretičnih tem kot kvintni krog za iskanje akordov, ali pa morda članek za nakup nove akustične oziroma električne kitare ali klavirja(klaviature). Veliko srče pri iskanju svoje popevke, ki ustreza tebi v kategoriji slovenska popevka! 
 </p>
-<p style={{margin:"50px 5%", textAlign:"justify", lineHeight:"1.4"}}> Slovenska popevka, ki se je nekdaj imenovala Dnevi slovenske zabavne glasbe je slovenski festival petja in zabavne glasbe, ki se je prvič pojavil leta 1962 in deloval vse do leta 1983, nato pa po premoru zopet začel delovati leta 1998. Festival je doživel svoje zlato obdobje v 80. letih, ko so nam bile predstavljene zimzelene uspešnice kot so Zemlja pleše orion, Med iskrenimi ljudmi, Maček v žaklju, Poletna noč in mnogo več.
+<p style={{ textAlign:"justify", lineHeight:"1.4"}}> Slovenska popevka, ki se je nekdaj imenovala Dnevi slovenske zabavne glasbe je slovenski festival petja in zabavne glasbe, ki se je prvič pojavil leta 1962 in deloval vse do leta 1983, nato pa po premoru zopet začel delovati leta 1998. Festival je doživel svoje zlato obdobje v 80. letih, ko so nam bile predstavljene zimzelene uspešnice kot so Zemlja pleše orion, Med iskrenimi ljudmi, Maček v žaklju, Poletna noč in mnogo več.
 </p>
+<div style={{textAlign:"center", margin:"30px auto", width:"100%"}}>
+  <h2>Slovenska popevka besedilo pesmi akordi za kitaro</h2>
+  <img src="/Slovenska-popevka-besedilo-akordi-za-kitaro.jpg" alt="Slovenska-popevka-besedilo-akordi-za-kitaro" width="100%" />
+  </div>
+</div>
     </Layout>
   );
 }

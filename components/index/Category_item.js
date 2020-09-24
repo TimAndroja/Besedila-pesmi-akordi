@@ -30,7 +30,7 @@ class Category_item extends React.Component {
                   <img
                     className={styles.cardimage}
                     src="../static/card_image.jpg"
-                    alt=""
+                    alt={this.props.song.title}
                   />
                 </div>
                 <div className={styles.stats}>
@@ -38,7 +38,7 @@ class Category_item extends React.Component {
                     {this.props.song.views}
                     <img
                       src="../static/eye.png"
-                      alt=""
+                      alt="eye.png"
                       className={styles.view_image}
                     />
                   </div>

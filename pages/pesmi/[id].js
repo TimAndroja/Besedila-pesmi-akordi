@@ -10,7 +10,7 @@ export default function Besedila ({song,recommendations_author,recommendations_c
   <Layout_noh1>
     <Head>
       <title>
-        {song.songData[0].title} {song.songData[0].author.length? "-" : ""  }  {song.songData[0].author} | Besedilo z Akordi za kitaro
+        {song.songData[0].title.toUpperCase()} - Besedilo z Akordi za kitaro | Izvajalec pesmi: { song.songData[0].author.length? song.songData[0].author : "ni navedeno"  } 
       </title>
       <meta
         name="description"

@@ -21,12 +21,19 @@ function otroske_pesmice({searchResults}) {
         />
       </Head>
       <Search_content search_results={searchResults} title="OTROŠKE PESMICE | " />
-      <p style={{margin:"50px 5%", textAlign:"justify", lineHeight:"1.4"}}>Dobrodošli v kategoriji Otroške pesmice. Ponujamo vam veliko zbirko akordov za kitaro, klavir in druge inštrumente. Vabimo, da tudi vi dodate svoje akorde ali tablature za kakšno otroško pesem in tako nam, vam in vsem drugim omogočite obilo zabave pri igranju in učenju besedil pesmi in akordov. Dodajanje svojega besedila je mogoče v orodni vrstici na zavihku  <Link href="/dodaj_akorde"> Dodaj svoje
+      <div className="seo_wrapper" style={{ width:"90%", margin:"50px auto"}}> 
+      <h2>Pesmice za otroke z besedilom in akordi</h2>
+      <p style={{ textAlign:"justify", lineHeight:"1.4"}}>Dobrodošli v kategoriji Otroške pesmice. Ponujamo vam veliko zbirko akordov za kitaro, klavir in druge inštrumente. Vabimo, da tudi vi dodate svoje akorde ali tablature za kakšno otroško pesem in tako nam, vam in vsem drugim omogočite obilo zabave pri igranju in učenju besedil pesmi in akordov. Dodajanje svojega besedila je mogoče v orodni vrstici na zavihku  <Link href="/dodaj_akorde"> Dodaj svoje
 Besedilo/Akorde</Link>. Če rabite pomoč pri igranju kitare ali pa vas morda zanima kaj drugega z glasbenega področja, vam na začetni strani ponujamo glasbene članke, od onsnovnih akordov za kitaro, video lekcij za učenje kitare, do malo bolj teoretičnih tem kot kvintni krog za iskanje akordov, ali pa morda članek za nakup nove akustične oziroma električne kitare ali klavirja(klaviature). Veliko srče pri iskanju pesmi, ki ustreza tebi v kategoriji ortoške pesmi!
 </p>
-      <p style={{margin:"50px 5%", textAlign:"justify", lineHeight:"1.4"}}>Otroške pesmi so pesmice, ki so bile napisane za otroke. V preteklost so se v večini pojavljale ljudske otroške pesmice, ki so jih starši peli in igrali kot uspavanke, ali pa za razvedrilo. Otroške pesmice velikokrat obsegajo tematiko živali, ali ljudi v povezavi z ljubeznijo, igro in nagajivostjo. Veliko otroških pesmic oziroma  pesmi za otroke in akordov lahko najdete na tem glasbenem poratalu pod rubriko otroške pesmice. Nekatere bolj znanih pesmi za otroke so Kuža pazi, Lepa anka kolo vodi, Pika Nogavička, Marko skače, Zajček Dolgoušček, Sreča na vrvici, Abraham ma sedem sinov, Moj črni konj.
+      <p style={{textAlign:"justify", lineHeight:"1.4"}}>Otroške pesmi so pesmice, ki so bile napisane za otroke. V preteklost so se v večini pojavljale ljudske otroške pesmice, ki so jih starši peli in igrali kot uspavanke, ali pa za razvedrilo. Otroške pesmice velikokrat obsegajo tematiko živali, ali ljudi v povezavi z ljubeznijo, igro in nagajivostjo. Veliko otroških pesmic oziroma  pesmi za otroke in akordov lahko najdete na tem glasbenem poratalu pod rubriko otroške pesmice. Nekatere bolj znanih pesmi za otroke so Kuža pazi, Lepa anka kolo vodi, Pika Nogavička, Marko skače, Zajček Dolgoušček, Sreča na vrvici, Abraham ma sedem sinov, Moj črni konj.
 </p>
-   
+<div style={{textAlign:"center", margin:"30px auto", width:"100%"}}>
+  <h2>Otroske pesmice besedila akordi za kitaro</h2>
+  <img src="/Otroske-pesmice-besedila-akordi-za-kitaro.jpg" alt="Rock-glasba-besedila-akordi-za-kitaro" width="100%" />
+  </div>
+
+   </div>
     </Layout>
   );
 }
