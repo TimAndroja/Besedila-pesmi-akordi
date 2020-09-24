@@ -62,7 +62,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       url: "/kategorija/slovenska_popevka",
     });
     smStream.write({
-      url: "/kategorija/narodno_zabavna_glasba0",
+      url: "/kategorija/narodno_zabavna_glasba",
     });
     smStream.write({
       url: "/kategorija/otroske_pesmice",
